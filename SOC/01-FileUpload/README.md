@@ -39,4 +39,5 @@ The goal of this exercise was to understand how an insecure file upload function
 
 ## Notes
 
-This project was created for learning purposes in a local lab environment.
+This project was created for learning purposes in a local lab environment
+Related vulnerability class: CWE-434 (Unrestricted Upload of File with Dangerous Type)
