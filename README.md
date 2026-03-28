@@ -30,8 +30,7 @@ Appassionato di sicurezza offensiva e difensiva, con focus su penetration testin
 | 01 | File Upload Exploit + BurpSuite | PHP Web Shell, RCE | BurpSuite | [🔗 Link](./SOC/01-FileUpload/) |
 | 02 | XSS + SQL Injection | Cookie Stealing, UNION Attack | DVWA | [🔗 Link](./SOC/02-XSS-SQLi/) |
 | 03 | Password Cracking | John the Ripper, MD5 Hash | John/Metasploitable | [🔗 Link](./SOC/03-PasswordCracking/) |
-| 04 | Authentication Cracking | Brute Force SSH/FTP | Hydra | [🔗 Link](SOC/04-AuthCracking/W14D4-Authentication_craking_con_Hydra.pdf) || 05 | Coming soon... | - | - | - |
-
+| 04 | Authentication Cracking | Brute Force SSH/FTP | Hydra | [🔗 Link](SOC/04-AuthCracking/Authentication%20Cracking%20(hydra).pdf) |
 ---
 
 ## 📜 Certificazioni
