@@ -1,59 +1,60 @@
-# 🛡️ Cybersecurity Portfolio – Luca Danisi
-
-Junior cybersecurity student, currently pursuing:
-- Cisco CCST Cybersecurity
-- CompTIA Security+
-- CCNA
-- CySA+
-
-Targeting entry-level SOC Analyst roles.
-
-📍 LinkedIn: [linkedin.com/in/luca-danisi-5a80a227](https://linkedin.com/in/luca-danisi-5a80a227)
-
+# 🛡️ Cybersecurity Portfolio — Luca Danisi
+> Practical cybersecurity portfolio targeting junior roles.  
+> Includes offensive writeups (HTB) and defensive lab reports (SOC Analyst).
 ---
+## 👤 About Me
+Cybersecurity student currently pursuing **Cisco CCST Cybersecurity**, working towards **CompTIA Security+** and beyond.  
+Passionate about both offensive and defensive security, with a focus on penetration testing and SOC analysis.
 
-## 🧪 SOC Labs
-
-| # | Lab | Tools | Description |
-|---|-----|-------|-------------|
-| 01 | [File Upload Exploitation](./SOC/01-FileUpload) | BurpSuite, DVWA | Exploiting unrestricted file upload vulnerability |
-| 02 | [XSS & SQL Injection](./SOC/02-XSS-SQLi) | DVWA, Metasploitable | Reflected XSS and SQL Injection attacks |
-| 03 | [Password Cracking](./SOC/03-PasswordCracking) | John the Ripper | Cracking MD5 hashes extracted via SQL Injection |
-| 04 | [Auth Cracking](./SOC/04-AuthCracking) | Hydra | Brute-force attacks on SSH and FTP |
-| 05 | [ARP Poisoning](./SOC/05-ARP-Poisoning-Ettercap) | Ettercap, Wireshark | MitM attack via ARP Poisoning |
-| 06 | [Hacking with Metasploit](./SOC/06-Metasploit-vsftpd) | Nmap, Metasploit, Netcat, Telnet | Exploiting vsftpd 2.3.4 backdoor (CVE-2011-2523) |
-
+🔗 [LinkedIn](https://www.linkedin.com/in/luca-danisi-5a80a227)  
+🟥 [Hack The Box Profile](https://app.hackthebox.com/users/3050365)
 ---
-
-## 💀 HackTheBox Writeups
-
-| # | Machine | Tier | Difficulty | Topics |
-|---|---------|------|------------|--------|
-| 01 | [Meow](./HTB/Meow) | Tier 0 | Very Easy | Telnet, default credentials |
-| 02 | [Redeemer](./HTB/Redeemer) | Tier 0 | Very Easy | Redis enumeration |
-| 03 | [Appointment](./HTB/Appointment) | Tier 1 | Very Easy | SQL Injection |
-| 04 | [Responder](./HTB/Responder) | Tier 1 | Very Easy | LLMNR Poisoning, WinRM |
-| 05 | [Crocodile](./HTB/Crocodile) | Tier 1 | Very Easy | FTP anonymous login, web enumeration |
-| 06 | [Three](./HTB/Three) | Tier 1 | Very Easy | AWS S3, subdomain enumeration |
-
+## 🧰 Tools & Skills
+| Tool | Category | Usage |
+|---|---|---|
+| Nmap | Reconnaissance | Port scanning, service enumeration |
+| Wireshark | Network Analysis | Packet capture and traffic analysis |
+| Splunk | SIEM | Log analysis, alert monitoring |
+| Metasploit | Exploitation | Vulnerability exploitation framework |
+| Hydra | Password Attacks | Brute force SSH, FTP, web logins |
+| BurpSuite | Web Security | HTTP interception, web app testing |
+| John the Ripper | Password Attacks | Hash cracking |
+| Ettercap | Network Attacks | ARP Poisoning, Man-in-the-Middle |
+| Netcat | Network Utility | Shell connections, port testing |
+| Telnet | Network Utility | Manual protocol interaction |
 ---
-
-## 🛠️ Tools & Skills
-
-| Tool | Usage |
-|------|-------|
-| Nmap | Network scanning, port and service enumeration |
-| Metasploit | Exploitation framework |
-| BurpSuite | Web application testing |
-| Wireshark | Network traffic analysis |
-| Hydra | Brute-force attacks |
-| John the Ripper | Password cracking |
-| Ettercap | MitM attacks, ARP Poisoning |
-| Netcat | Network utility, shell connections |
-| Telnet | Manual protocol interaction |
-
+## ⚔️ HTB Machines (7/10)
+| # | Machine | OS | Difficulty | Technique |
+|---|---|---|---|---|
+| 01 | [Meow](HTB/Meow/README.md) | Linux | Very Easy | Telnet, anonymous login |
+| 02 | [Redeemer](HTB/Redeemer/README.md) | Linux | Very Easy | Redis enumeration |
+| 03 | [Appointment](HTB/Appointment/README.md) | Linux | Very Easy | SQL Injection |
+| 04 | [Responder](HTB/Responder/README.md) | Windows | Very Easy | LFI, NTLMv2, WinRM |
+| 05 | [Crocodile](HTB/Crocodile/README.md) | Linux | Very Easy | FTP anonymous, directory brute force |
+| 06 | [Sequel](HTB/Sequel/README.md) | Linux | Very Easy | MySQL unauthenticated access |
+| 07 | [Three](HTB/Three/README.md) | Linux | Very Easy | S3 bucket misconfiguration, PHP RCE |
+| 08 | Coming soon... | - | - | - |
+| 09 | Coming soon... | - | - | - |
+| 10 | Coming soon... | - | - | - |
 ---
-
-## 📜 Certifications in Progress
-- Cisco CCST Cybersecurity
-- CompTIA Security+
+## 🛡️ SOC / Offensive Lab Reports (6/10)
+| # | Title | Technique | Tool |
+|---|---|---|---|
+| 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | PHP Web Shell, RCE | BurpSuite |
+| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | Cookie Stealing, UNION Attack | DVWA |
+| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John the Ripper, MD5 Hash | John/Metasploitable |
+| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Brute Force SSH/FTP | Hydra |
+| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | ARP Spoofing, Credential Sniffing | Ettercap, Wireshark |
+| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/06-Metasploit-vsftpd/README.md) | Backdoor Exploitation, Bind Shell | Nmap, Metasploit, Netcat, Telnet |
+| 07 | Coming soon... | - | - |
+| 08 | Coming soon... | - | - |
+| 09 | Coming soon... | - | - |
+| 10 | Coming soon... | - | - |
+---
+## 🏅 Certifications
+| Certification | Status | Year |
+|---|---|---|
+| Cisco CCST Cybersecurity | 🔄 In progress | 2026 |
+| CompTIA Security+ | 🗓️ Planned | 2026 |
+---
+*Last updated: April 2026*
