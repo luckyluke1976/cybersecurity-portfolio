@@ -45,7 +45,7 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John the Ripper, MD5 Hash | John/Metasploitable |
 | 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Brute Force SSH/FTP | Hydra |
 | 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | ARP Spoofing, Credential Sniffing | Ettercap, Wireshark |
-| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/06-Metasploit-vsftpd/README.md) | Backdoor Exploitation, Bind Shell | Nmap, Metasploit, Netcat, Telnet |
+| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Backdoor Exploitation, Bind Shell | Nmap, Metasploit, Netcat, Telnet |
 | 07 | Coming soon... | - | - |
 | 08 | Coming soon... | - | - |
 | 09 | Coming soon... | - | - |
