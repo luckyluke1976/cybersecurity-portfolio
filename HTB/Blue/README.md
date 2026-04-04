@@ -65,8 +65,8 @@ run
 ### 4. Flags
 
 ```bash
-type c:\Users\haris\Desktop\user.txt.txt    # user flag
-type c:\Users\Administrator\Desktop\root.txt.txt    # root flag
+type c:\Users\haris\Desktop\user.txt.txt    # 22120d94558187fd2c9aca0f459761bc 
+type c:\Users\Administrator\Desktop\root.txt.txt    # d1fe52bc4bed51eb0ad691fd7195c695 
 ```
 
 ---
