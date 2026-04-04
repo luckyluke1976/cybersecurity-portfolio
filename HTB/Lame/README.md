@@ -80,8 +80,8 @@ run
 ### 5. Flags
 
 ```bash
-cat /home/makis/user.txt   # user flag
-cat /root/root.txt          # root flag
+cat /home/makis/user.txt   # 4145e87398cbacdf79e0bf5257001391
+cat /root/root.txt          # 443b3d463cd6b278fe58d85ed94ddd9c
 ```
 
 ---
