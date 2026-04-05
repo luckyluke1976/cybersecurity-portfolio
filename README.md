@@ -24,17 +24,18 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | Ettercap | Network Attacks | ARP Poisoning, Man-in-the-Middle |
 | Netcat | Network Utility | Shell connections, port testing |
 | Telnet | Network Utility | Manual protocol interaction |
+| msfvenom | Exploitation | Payload generation |
 
 ---
 ## ⚔️ HTB Machines
 
-### 🔴 Main Machines (3/8)
+### 🔴 Main Machines (4/8)
 | # | Machine | OS | Difficulty | Technique |
 |---|---|---|---|---|
 | 01 | [Lame](HTB/Lame/README.md) | Linux | Easy | SMB exploitation, CVE-2007-2447 |
 | 02 | [Blue](HTB/Blue/README.md) | Windows | Easy | MS17-010 EternalBlue |
 | 03 | [Legacy](HTB/Legacy/README.md) | Windows | Easy | MS08-067 NetAPI |
-| 04 | Jerry — coming soon | Windows | Easy | Tomcat default credentials, WAR upload |
+| 04 | [Jerry](HTB/Jerry/README.md) | Windows | Easy | Tomcat default credentials, WAR upload |
 | 05 | Nibbles — coming soon | Linux | Easy | Web exploitation, RCE |
 | 06 | Bounty — coming soon | Windows | Medium | IIS, file upload bypass |
 | 07 | Optimum — coming soon | Windows | Easy | HttpFileServer RCE |
