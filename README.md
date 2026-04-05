@@ -24,7 +24,6 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | Ettercap | Network Attacks | ARP Poisoning, Man-in-the-Middle |
 | Netcat | Network Utility | Shell connections, port testing |
 | Telnet | Network Utility | Manual protocol interaction |
-| msfvenom | Exploitation | Payload generation |
 
 ---
 ## ⚔️ HTB Machines
@@ -36,9 +35,9 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | 02 | [Blue](HTB/Blue/README.md) | Windows | Easy | MS17-010 EternalBlue |
 | 03 | [Legacy](HTB/Legacy/README.md) | Windows | Easy | MS08-067 NetAPI |
 | 04 | [Jerry](HTB/Jerry/README.md) | Windows | Easy | Tomcat default credentials, WAR upload |
-| 05 | Nibbles — coming soon | Linux | Easy | Web exploitation, RCE |
-| 06 | Bounty — coming soon | Windows | Medium | IIS, file upload bypass |
-| 07 | Optimum — coming soon | Windows | Easy | HttpFileServer RCE |
+| 05 | [Nibbles](HTB/Nibbles/README.md) | Linux | Easy | Nibbleblog file upload RCE, sudo misconfiguration |
+| 06 | [Optimum](HTB/Optimum/README.md) | Windows | Easy | HttpFileServer RCE |
+| 07 | [Bounty](HTB/Bounty/README.md) | Windows | Medium | IIS, file upload bypass |
 | 08 | TBD | - | - | - |
 
 ---
@@ -61,18 +60,18 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 
 ---
 ## 🛡️ SOC / Offensive Lab Reports (6/10)
-| # | Title | Technique | Tool |
-|---|---|---|---|
-| 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | PHP Web Shell, RCE | BurpSuite |
-| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | Cookie Stealing, UNION Attack | DVWA |
-| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John the Ripper, MD5 Hash | John/Metasploitable |
-| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Brute Force SSH/FTP | Hydra |
-| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | ARP Spoofing, Credential Sniffing | Ettercap, Wireshark |
-| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Backdoor Exploitation, Bind Shell | Nmap, Metasploit, Netcat, Telnet |
-| 07 | Coming soon... | - | - |
-| 08 | Coming soon... | - | - |
-| 09 | Coming soon... | - | - |
-| 10 | Coming soon... | - | - |
+| # | Title/README | Technique | Tool | PDF Report |
+|---|---|---|---|---|
+| 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | PHP Web Shell, RCE | BurpSuite | [link](SOC/01-FileUpload/EXPLOIT%20FILE%20UPLOAD.pdf) |
+| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | Cookie Stealing, UNION Attack | DVWA | [link](SOC/02-XSS-SQLi/XSS%20+%20SQL%20Injection.pdf) |
+| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John the Ripper, MD5 Hash | John/Metasploitable | [link](SOC/03-PasswordCracking/Password%20craking%20and%20malware.pdf) |
+| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Brute Force SSH/FTP | Hydra | [link](SOC/04-AuthCracking/Authentication%20Cracking%20(hydra).pdf) |
+| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | ARP Spoofing, Credential Sniffing | Ettercap, Wireshark | [link](SOC/ARP-Poisoning-Ettercap/Null%20session%20e%20Arp%20Poisoning.pdf) |
+| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Backdoor Exploitation, Bind Shell | Nmap, Metasploit, Netcat, Telnet | [link](SOC/Hacking%20with%20Metasploit/Hacking%20con%20Metasploit.pdf) |
+| 07 | Coming soon... | - | - | - |
+| 08 | Coming soon... | - | - | - |
+| 09 | Coming soon... | - | - | - |
+| 10 | Coming soon... | - | - | - |
 
 ---
 ## 🏅 Certifications
