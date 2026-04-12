@@ -24,22 +24,21 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | Ettercap | Network Attacks | ARP Poisoning, Man-in-the-Middle |
 | Netcat | Network Utility | Shell connections, port testing |
 | Telnet | Network Utility | Manual protocol interaction |
-| netdiscover | Reconnaissance | Network host discovery |
 
 ---
 ## 🛡️ SOC Lab Reports (7/10)
-| # | Title | Technique | Tool |
-|---|---|---|---|
-| 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | PHP Web Shell, RCE | BurpSuite |
-| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | Cookie Stealing, UNION Attack | DVWA |
-| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John the Ripper, MD5 Hash | John/Metasploitable |
-| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Brute Force SSH/FTP | Hydra |
-| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | ARP Spoofing, Credential Sniffing | Ettercap, Wireshark |
-| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Backdoor Exploitation, Bind Shell | Nmap, Metasploit, Netcat, Telnet |
-| 07 | [Black Box – BSides Vancouver 2018](SOC/Black-Box-BSides/README.md) | FTP Enumeration, WordPress RCE, Privilege Escalation | netdiscover, Nmap, Hydra, Netcat |
-| 08 | Coming soon... | - | - |
-| 09 | Coming soon... | - | - |
-| 10 | Coming soon... | - | - |
+| # | Title/README | Tool |
+|---|---|---|
+| 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | BurpSuite |
+| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | DVWA |
+| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John/Metasploitable |
+| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Hydra |
+| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | Ettercap, Wireshark |
+| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Nmap, Metasploit, Netcat, Telnet |
+| 07 | [Black Box – BSides Vancouver 2018](SOC/Black-Box-BSides/README.md) | netdiscover, Nmap, Hydra, Netcat |
+| 08 | Coming soon... | - |
+| 09 | Coming soon... | - |
+| 10 | Coming soon... | - |
 
 ---
 ## ⚔️ HTB Machines
