@@ -27,18 +27,18 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 
 ---
 ## 🛡️ SOC Lab Reports (7/10)
-| # | Title/README | Tool |
-|---|---|---|
-| 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | BurpSuite |
-| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | DVWA |
-| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John/Metasploitable |
-| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Hydra |
-| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | Ettercap, Wireshark |
-| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Nmap, Metasploit, Netcat, Telnet |
-| 07 | [Black Box – BSides Vancouver 2018](SOC/Black-Box-BSides/README.md) | netdiscover, Nmap, Hydra, Netcat |
-| 08 | Coming soon... | - |
-| 09 | Coming soon... | - |
-| 10 | Coming soon... | - |
+| # | Title/README | Tool | Report PDF |
+|---|---|---|---|
+| 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | BurpSuite | [📄 PDF](SOC/01-FileUpload/EXPLOIT_FILE_UPLOAD.pdf) |
+| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | DVWA | [📄 PDF](SOC/02-XSS-SQLi/report.pdf) |
+| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John/Metasploitable | [📄 PDF](SOC/03-PasswordCracking/report.pdf) |
+| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Hydra | [📄 PDF](SOC/04-AuthCracking/report.pdf) |
+| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | Ettercap, Wireshark | [📄 PDF](SOC/ARP-Poisoning-Ettercap/report.pdf) |
+| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Nmap, Metasploit, Netcat, Telnet | [📄 PDF](SOC/Hacking%20with%20Metasploit/report.pdf) |
+| 07 | [Black Box – BSides Vancouver 2018](SOC/Black-Box-BSides/README.md) | netdiscover, Nmap, Hydra, Netcat | [📄 PDF](SOC/Black-Box-BSides/Black_Box.pdf) |
+| 08 | Coming soon... | - | - |
+| 09 | Coming soon... | - | - |
+| 10 | Coming soon... | - | - |
 
 ---
 ## ⚔️ HTB Machines
