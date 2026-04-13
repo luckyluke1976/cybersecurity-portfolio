@@ -1,21 +1,17 @@
 # 🛡️ Cybersecurity Portfolio — Luca Danisi
 > Building my path in cybersecurity, one lab at a time.  
 > Hands-on projects and writeups — learning by doing, documenting everything.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luca-danisi-5a80a227)
+[![Credly](https://img.shields.io/badge/Credly-FF6B00?style=flat&logo=credly&logoColor=white)](https://www.credly.com/users/luca-danisi)
+[![Hack The Box](https://img.shields.io/badge/HackTheBox-9FEF00?style=flat&logo=hackthebox&logoColor=black)](https://app.hackthebox.com/public/users/3050365)
+
 ---
 ## 🏅 Certifications
 | Certification | Status | Year |
 |---|---|---|
 | Cisco CCST Cybersecurity | 🔄 In progress | 2026 |
 | CompTIA Security+ | 🗓️ Planned | 2026 |
-
----
-## 👤 About Me
-Cybersecurity student currently pursuing **Cisco CCST Cybersecurity**, working towards **CompTIA Security+** and beyond.  
-Passionate about both offensive and defensive security, with a focus on penetration testing and SOC analysis.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luca-danisi-5a80a227)
-[![Credly](https://img.shields.io/badge/Credly-FF6B00?style=flat&logo=credly&logoColor=white)](https://www.credly.com/users/luca-danisi)
-[![Hack The Box](https://img.shields.io/badge/HackTheBox-9FEF00?style=flat&logo=hackthebox&logoColor=black)](https://app.hackthebox.com/public/users/3050365)
 
 ---
 ## 🧰 Tools & Skills
