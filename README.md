@@ -26,18 +26,19 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | Netcat | Network Utility | Shell connections, port testing |
 | Telnet | Network Utility | Manual protocol interaction |
 | Gobuster | Web Enumeration | Directory and vhost brute force |
+| Nishang | Post Exploitation | PowerShell reverse shells |
 
 ---
 ## 🛡️ SOC Lab Reports (7/10)
 | # | Title/README | Tool | PDF Report |
 |---|---|---|---|
 | 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | BurpSuite | [📄 PDF](SOC/01-FileUpload/EXPLOIT%20FILE%20UPLOAD.pdf) |
-| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | DVWA | [📄 PDF](SOC/02-XSS-SQLi/report.pdf) |
-| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John the Ripper | [📄 PDF](SOC/03-PasswordCracking/report.pdf) |
-| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Hydra | [📄 PDF](SOC/04-AuthCracking/report.pdf) |
-| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | Ettercap, Wireshark | [📄 PDF](SOC/ARP-Poisoning-Ettercap/report.pdf) |
-| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Metasploit, Netcat | [📄 PDF](SOC/Hacking%20with%20Metasploit/report.pdf) |
-| 07 | [Black Box Penetration Test](SOC/BlackBox/README.md) | Nmap, Metasploit | [📄 PDF](SOC/BlackBox/report.pdf) |
+| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | DVWA | [📄 PDF](SOC/02-XSS-SQLi/XSS%20%2B%20SQL%20Injection.pdf) |
+| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John the Ripper | [📄 PDF](SOC/03-PasswordCracking/Password%20craking%20and%20malware.pdf) |
+| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Hydra | [📄 PDF](SOC/04-AuthCracking/Authentication%20Cracking%20(hydra).pdf) |
+| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | Ettercap, Wireshark | [📄 PDF](SOC/ARP-Poisoning-Ettercap/Null%20session%20e%20Arp%20Poisoning.pdf) |
+| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Metasploit, Netcat | [📄 PDF](SOC/Hacking%20with%20Metasploit/Hacking%20con%20Metasploit.pdf) |
+| 07 | [Black Box Penetration Test](SOC/Black%20Box/README.md) | Nmap, Metasploit | [📄 PDF](SOC/Black%20Box/Black%20Box.pdf) |
 | 08 | Coming soon... | - | - |
 | 09 | Coming soon... | - | - |
 | 10 | Coming soon... | - | - |
@@ -45,7 +46,7 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 ---
 ## ⚔️ HTB Machines
 
-### 🔴 Main Machines (5/8)
+### 🔴 Main Machines (6/8)
 | # | Machine | OS | Difficulty | Technique |
 |---|---|---|---|---|
 | 01 | [Lame](HTB/Lame/README.md) | Linux | Easy | SMB exploitation, CVE-2007-2447 |
@@ -53,7 +54,7 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | 03 | [Legacy](HTB/Legacy/README.md) | Windows | Easy | MS08-067 NetAPI |
 | 04 | [Jerry](HTB/Jerry/README.md) | Windows | Easy | Tomcat default credentials, WAR upload |
 | 05 | [Nibbles](HTB/Nibbles/README.md) | Linux | Easy | Web enumeration, Nibbleblog RCE, sudo misconfiguration |
-| 06 | Bounty — coming soon | Windows | Medium | IIS, file upload bypass |
+| 06 | [Bounty](HTB/Bounty/README.md) | Windows | Medium | IIS web.config upload, SeImpersonatePrivilege |
 | 07 | Optimum — coming soon | Windows | Easy | HttpFileServer RCE |
 | 08 | TBD | - | - | - |
 
