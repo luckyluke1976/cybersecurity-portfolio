@@ -2,6 +2,13 @@
 > Building my path in cybersecurity, one lab at a time.  
 > Hands-on projects and writeups — learning by doing, documenting everything.
 ---
+## 🏅 Certifications
+| Certification | Status | Year |
+|---|---|---|
+| Cisco CCST Cybersecurity | 🔄 In progress | 2026 |
+| CompTIA Security+ | 🗓️ Planned | 2026 |
+
+---
 ## 👤 About Me
 Cybersecurity student currently pursuing **Cisco CCST Cybersecurity**, working towards **CompTIA Security+** and beyond.  
 Passionate about both offensive and defensive security, with a focus on penetration testing and SOC analysis.
@@ -75,10 +82,3 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | 07 | [Three](HTB/Three/README.md) | Linux | Very Easy | S3 bucket misconfiguration, PHP RCE |
 
 </sub>
-
----
-## 🏅 Certifications
-| Certification | Status | Year |
-|---|---|---|
-| Cisco CCST Cybersecurity | 🔄 In progress | 2026 |
-| CompTIA Security+ | 🗓️ Planned | 2026 |
