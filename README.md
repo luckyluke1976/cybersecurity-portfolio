@@ -18,39 +18,26 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | Wireshark | Network Analysis | Packet capture and traffic analysis |
 | Splunk | SIEM | Log analysis, alert monitoring |
 | Metasploit | Exploitation | Vulnerability exploitation framework |
+| msfvenom | Payload Generation | Custom reverse shell payloads |
 | Hydra | Password Attacks | Brute force SSH, FTP, web logins |
 | BurpSuite | Web Security | HTTP interception, web app testing |
 | John the Ripper | Password Attacks | Hash cracking |
 | Ettercap | Network Attacks | ARP Poisoning, Man-in-the-Middle |
 | Netcat | Network Utility | Shell connections, port testing |
 | Telnet | Network Utility | Manual protocol interaction |
-
----
-## 🛡️ SOC Lab Reports (7/10)
-| # | Title/README | Tool | Report PDF |
-|---|---|---|---|
-| 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | BurpSuite | [📄 PDF](SOC/01-FileUpload/EXPLOIT_FILE_UPLOAD.pdf) |
-| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | DVWA | [📄 PDF](SOC/02-XSS-SQLi/report.pdf) |
-| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John/Metasploitable | [📄 PDF](SOC/03-PasswordCracking/report.pdf) |
-| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Hydra | [📄 PDF](SOC/04-AuthCracking/report.pdf) |
-| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | Ettercap, Wireshark | [📄 PDF](SOC/ARP-Poisoning-Ettercap/report.pdf) |
-| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Nmap, Metasploit, Netcat, Telnet | [📄 PDF](SOC/Hacking%20with%20Metasploit/report.pdf) |
-| 07 | [Black Box – BSides Vancouver 2018](SOC/Black-Box-BSides/README.md) | netdiscover, Nmap, Hydra, Netcat | [📄 PDF](SOC/Black-Box-BSides/Black_Box.pdf) |
-| 08 | Coming soon... | - | - |
-| 09 | Coming soon... | - | - |
-| 10 | Coming soon... | - | - |
+| Gobuster | Web Enumeration | Directory and vhost brute force |
 
 ---
 ## ⚔️ HTB Machines
 
-### 🔴 Main Machines (3/8)
+### 🔴 Main Machines (5/8)
 | # | Machine | OS | Difficulty | Technique |
 |---|---|---|---|---|
 | 01 | [Lame](HTB/Lame/README.md) | Linux | Easy | SMB exploitation, CVE-2007-2447 |
 | 02 | [Blue](HTB/Blue/README.md) | Windows | Easy | MS17-010 EternalBlue |
 | 03 | [Legacy](HTB/Legacy/README.md) | Windows | Easy | MS08-067 NetAPI |
-| 04 | Jerry — coming soon | Windows | Easy | Tomcat default credentials, WAR upload |
-| 05 | Nibbles — coming soon | Linux | Easy | Web exploitation, RCE |
+| 04 | [Jerry](HTB/Jerry/README.md) | Windows | Easy | Tomcat default credentials, WAR upload |
+| 05 | [Nibbles](HTB/Nibbles/README.md) | Linux | Easy | Web enumeration, Nibbleblog RCE, sudo misconfiguration |
 | 06 | Bounty — coming soon | Windows | Medium | IIS, file upload bypass |
 | 07 | Optimum — coming soon | Windows | Easy | HttpFileServer RCE |
 | 08 | TBD | - | - | - |
@@ -72,6 +59,21 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | 07 | [Three](HTB/Three/README.md) | Linux | Very Easy | S3 bucket misconfiguration, PHP RCE |
 
 </sub>
+
+---
+## 🛡️ SOC / Offensive Lab Reports (6/10)
+| # | Title | Technique | Tool |
+|---|---|---|---|
+| 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | PHP Web Shell, RCE | BurpSuite |
+| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | Cookie Stealing, UNION Attack | DVWA |
+| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John the Ripper, MD5 Hash | John/Metasploitable |
+| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Brute Force SSH/FTP | Hydra |
+| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | ARP Spoofing, Credential Sniffing | Ettercap, Wireshark |
+| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Backdoor Exploitation, Bind Shell | Nmap, Metasploit, Netcat, Telnet |
+| 07 | Coming soon... | - | - |
+| 08 | Coming soon... | - | - |
+| 09 | Coming soon... | - | - |
+| 10 | Coming soon... | - | - |
 
 ---
 ## 🏅 Certifications
