@@ -28,6 +28,21 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | Gobuster | Web Enumeration | Directory and vhost brute force |
 
 ---
+## 🛡️ SOC Lab Reports (7/10)
+| # | Title/README | Tool | PDF Report |
+|---|---|---|---|
+| 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | BurpSuite | [📄 PDF](SOC/01-FileUpload/EXPLOIT%20FILE%20UPLOAD.pdf) |
+| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | DVWA | [📄 PDF](SOC/02-XSS-SQLi/report.pdf) |
+| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John the Ripper | [📄 PDF](SOC/03-PasswordCracking/report.pdf) |
+| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Hydra | [📄 PDF](SOC/04-AuthCracking/report.pdf) |
+| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | Ettercap, Wireshark | [📄 PDF](SOC/ARP-Poisoning-Ettercap/report.pdf) |
+| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Metasploit, Netcat | [📄 PDF](SOC/Hacking%20with%20Metasploit/report.pdf) |
+| 07 | [Black Box Penetration Test](SOC/BlackBox/README.md) | Nmap, Metasploit | [📄 PDF](SOC/BlackBox/report.pdf) |
+| 08 | Coming soon... | - | - |
+| 09 | Coming soon... | - | - |
+| 10 | Coming soon... | - | - |
+
+---
 ## ⚔️ HTB Machines
 
 ### 🔴 Main Machines (5/8)
@@ -59,21 +74,6 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | 07 | [Three](HTB/Three/README.md) | Linux | Very Easy | S3 bucket misconfiguration, PHP RCE |
 
 </sub>
-
----
-## 🛡️ SOC Lab Reports (6/10)
-| # | Title/README | Tool | PDF Report |
-|---|---|---|---|
-| 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | BurpSuite | [📄 PDF](SOC/01-FileUpload/EXPLOIT%20FILE%20UPLOAD.pdf) |
-| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | DVWA | [📄 PDF](SOC/02-XSS-SQLi/report.pdf) |
-| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John the Ripper | [📄 PDF](SOC/03-PasswordCracking/report.pdf) |
-| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Hydra | [📄 PDF](SOC/04-AuthCracking/report.pdf) |
-| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | Ettercap, Wireshark | [📄 PDF](SOC/ARP-Poisoning-Ettercap/report.pdf) |
-| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Metasploit, Netcat | [📄 PDF](SOC/Hacking%20with%20Metasploit/report.pdf) |
-| 07 | Coming soon... | - | - |
-| 08 | Coming soon... | - | - |
-| 09 | Coming soon... | - | - |
-| 10 | Coming soon... | - | - |
 
 ---
 ## 🏅 Certifications
