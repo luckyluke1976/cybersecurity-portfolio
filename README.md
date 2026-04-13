@@ -1,6 +1,6 @@
 # 🛡️ Cybersecurity Portfolio — Luca Danisi
-> Practical cybersecurity portfolio targeting junior roles.  
-> Includes offensive writeups (HTB) and defensive lab reports (SOC Analyst).
+> Building my path in cybersecurity, one lab at a time.  
+> Hands-on projects and writeups — learning by doing, documenting everything.
 ---
 ## 👤 About Me
 Cybersecurity student currently pursuing **Cisco CCST Cybersecurity**, working towards **CompTIA Security+** and beyond.  
