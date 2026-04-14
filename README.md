@@ -1,22 +1,20 @@
 # 🛡️ Cybersecurity Portfolio — Luca Danisi
-> Practical cybersecurity portfolio targeting junior roles.  
-> Includes offensive writeups (HTB) and defensive lab reports (SOC Analyst).
-
----
-
-## 👤 About Me
-
-Cybersecurity student currently pursuing **Cisco CCST Cybersecurity**, working towards **CompTIA Security+** and beyond.  
-Passionate about both offensive and defensive security, with a focus on penetration testing and SOC analysis.
+> Building my path in cybersecurity, one lab at a time.  
+> Hands-on projects and writeups — learning by doing, documenting everything.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luca-danisi-5a80a227)
 [![Credly](https://img.shields.io/badge/Credly-FF6B00?style=flat&logo=credly&logoColor=white)](https://www.credly.com/users/luca-danisi)
 [![Hack The Box](https://img.shields.io/badge/HackTheBox-9FEF00?style=flat&logo=hackthebox&logoColor=black)](https://app.hackthebox.com/public/users/3050365)
 
 ---
+## 🏅 Certifications
+| Certification | Status | Year |
+|---|---|---|
+| Cisco CCST Cybersecurity | 🔄 In progress | 2026 |
+| CompTIA Security+ | 🗓️ Planned | 2026 |
 
+---
 ## 🧰 Tools & Skills
-
 | Tool | Category | Usage |
 |---|---|---|
 | Nmap | Reconnaissance | Port scanning, service enumeration |
@@ -24,29 +22,44 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | Splunk | SIEM | Log analysis, alert monitoring |
 | Metasploit | Exploitation | Vulnerability exploitation framework |
 | Meterpreter | Post-Exploitation | Remote shell, screenshot, keylogger, webcam |
+| msfvenom | Payload Generation | Custom reverse shell payloads |
 | Hydra | Password Attacks | Brute force SSH, FTP, web logins |
 | BurpSuite | Web Security | HTTP interception, web app testing |
 | John the Ripper | Password Attacks | Hash cracking |
 | Ettercap | Network Attacks | ARP Poisoning, Man-in-the-Middle |
 | Netcat | Network Utility | Shell connections, port testing |
 | Telnet | Network Utility | Manual protocol interaction |
-| msfvenom | Exploitation | Malicious payload generation |
+| Gobuster | Web Enumeration | Directory and vhost brute force |
+| Nishang | Post Exploitation | PowerShell reverse shells |
 
 ---
+## 🛡️ SOC Lab Reports (8/10)
+| # | Title/README | Tool | PDF Report |
+|---|---|---|---|
+| 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | BurpSuite | [📄 PDF](SOC/01-FileUpload/EXPLOIT%20FILE%20UPLOAD.pdf) |
+| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | DVWA | [📄 PDF](SOC/02-XSS-SQLi/XSS%20%2B%20SQL%20Injection.pdf) |
+| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John the Ripper | [📄 PDF](SOC/03-PasswordCracking/Password%20craking%20and%20malware.pdf) |
+| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Hydra | [📄 PDF](SOC/04-AuthCracking/Authentication%20Cracking%20(hydra).pdf) |
+| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | Ettercap, Wireshark | [📄 PDF](SOC/ARP-Poisoning-Ettercap/Null%20session%20e%20Arp%20Poisoning.pdf) |
+| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Metasploit, Netcat | [📄 PDF](SOC/Hacking%20with%20Metasploit/Hacking%20con%20Metasploit.pdf) |
+| 07 | [Black Box Penetration Test](SOC/Black%20Box/README.md) | Nmap, Metasploit | [📄 PDF](SOC/Black%20Box/Black%20Box.pdf) |
+| 08 | [MS17-010 Post-Exploitation & MySQL Misconfiguration](SOC/08-MS17010-Meterpreter/README.md) | Metasploit, Meterpreter, MySQL | [📄 PDF](SOC/08-MS17010-Meterpreter/Ms17-010_Meterpreter.pdf) |
+| 09 | Coming soon... | - | - |
+| 10 | Coming soon... | - | - |
 
+---
 ## ⚔️ HTB Machines
 
-### 🔴 Main Machines (3/8)
-
+### 🔴 Main Machines (7/8)
 | # | Machine | OS | Difficulty | Technique |
 |---|---|---|---|---|
 | 01 | [Lame](HTB/Lame/README.md) | Linux | Easy | SMB exploitation, CVE-2007-2447 |
 | 02 | [Blue](HTB/Blue/README.md) | Windows | Easy | MS17-010 EternalBlue |
 | 03 | [Legacy](HTB/Legacy/README.md) | Windows | Easy | MS08-067 NetAPI |
-| 04 | Jerry — coming soon | Windows | Easy | Tomcat default credentials, WAR upload |
-| 05 | Nibbles — coming soon | Linux | Easy | Web exploitation, RCE |
-| 06 | Bounty — coming soon | Windows | Medium | IIS, file upload bypass |
-| 07 | Optimum — coming soon | Windows | Easy | HttpFileServer RCE |
+| 04 | [Jerry](HTB/Jerry/README.md) | Windows | Easy | Tomcat default credentials, WAR upload |
+| 05 | [Nibbles](HTB/Nibbles/README.md) | Linux | Easy | Web enumeration, Nibbleblog RCE, sudo misconfiguration |
+| 06 | [Bounty](HTB/Bounty/README.md) | Windows | Medium | IIS web.config upload, SeImpersonatePrivilege |
+| 07 | [Optimum](HTB/Optimum/README.md) | Windows | Easy | HttpFileServer RCE, MS16-032 |
 | 08 | TBD | - | - | - |
 
 ---
@@ -66,29 +79,3 @@ Passionate about both offensive and defensive security, with a focus on penetrat
 | 07 | [Three](HTB/Three/README.md) | Linux | Very Easy | S3 bucket misconfiguration, PHP RCE |
 
 </sub>
-
----
-
-## 🛡️ SOC / Offensive Lab Reports (7/10)
-
-| # | Title | Technique | Tool |
-|---|---|---|---|
-| 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | PHP Web Shell, RCE | BurpSuite |
-| 02 | [XSS + SQL Injection](SOC/02-XSS-SQLi/README.md) | Cookie Stealing, UNION Attack | DVWA |
-| 03 | [Password Cracking](SOC/03-PasswordCracking/README.md) | John the Ripper, MD5 Hash | John/Metasploitable |
-| 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Brute Force SSH/FTP | Hydra |
-| 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | ARP Spoofing, Credential Sniffing | Ettercap, Wireshark |
-| 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Backdoor Exploitation, Bind Shell | Nmap, Metasploit, Netcat, Telnet |
-| 07 | [MS17-010 Post-Exploitation & MySQL Misconfiguration](SOC/07-MS17010-Meterpreter/README.md) | Meterpreter, Keylogger, DB Access | Metasploit, Meterpreter, MySQL |
-| 08 | Coming soon... | - | - |
-| 09 | Coming soon... | - | - |
-| 10 | Coming soon... | - | - |
-
----
-
-## 🏅 Certifications
-
-| Certification | Status | Year |
-|---|---|---|
-| Cisco CCST Cybersecurity | 🔄 In progress | 2026 |
-| CompTIA Security+ | 🗓️ Planned | 2026 |
