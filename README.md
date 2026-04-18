@@ -50,7 +50,7 @@
 ---
 ## ⚔️ HTB Machines
 
-### 🔴 Main Machines (7/8)
+### 🔴 Main Machines (8/8)
 | # | Machine | OS | Difficulty | Technique |
 |---|---|---|---|---|
 | 01 | [Lame](HTB/Lame/README.md) | Linux | Easy | SMB exploitation, CVE-2007-2447 |
@@ -60,7 +60,7 @@
 | 05 | [Nibbles](HTB/Nibbles/README.md) | Linux | Easy | Web enumeration, Nibbleblog RCE, sudo misconfiguration |
 | 06 | [Bounty](HTB/Bounty/README.md) | Windows | Medium | IIS web.config upload, SeImpersonatePrivilege |
 | 07 | [Optimum](HTB/Optimum/README.md) | Windows | Easy | HttpFileServer RCE, MS16-032 |
-| 08 | TBD | - | - | - |
+| 08 | [Bastard](HTB/Bastard/README.md) | Windows | Medium | Drupal 7 Services RCE, MS15-051 |
 
 ---
 
