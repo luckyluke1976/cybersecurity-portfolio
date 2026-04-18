@@ -31,9 +31,10 @@
 | Telnet | Network Utility | Manual protocol interaction |
 | Gobuster | Web Enumeration | Directory and vhost brute force |
 | Nishang | Post Exploitation | PowerShell reverse shells |
+| GCC | C Compiler | Compiling vulnerable C programs for buffer overflow analysis |
 
 ---
-## 🛡️ SOC Lab Reports (8/10)
+## 🛡️ SOC Lab Reports (9/10)
 | # | Title/README | Tool | PDF Report |
 |---|---|---|---|
 | 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | BurpSuite | [📄 PDF](SOC/01-FileUpload/EXPLOIT%20FILE%20UPLOAD.pdf) |
@@ -44,7 +45,7 @@
 | 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Metasploit, Netcat | [📄 PDF](SOC/Hacking%20with%20Metasploit/Hacking%20con%20Metasploit.pdf) |
 | 07 | [Black Box Penetration Test](SOC/Black%20Box/README.md) | Nmap, Metasploit | [📄 PDF](SOC/Black%20Box/Black%20Box.pdf) |
 | 08 | [MS17-010 Post-Exploitation & MySQL Misconfiguration](SOC/08-MS17010-Meterpreter/README.md) | Metasploit, Meterpreter, MySQL | [📄 PDF](SOC/08-MS17010-Meterpreter/Ms17-010_Meterpreter.pdf) |
-| 09 | Coming soon... | - | - |
+| 09 | [Buffer Overflow in C](SOC/09-BufferOverflow/README.md) | GCC, C Language | [📄 PDF](SOC/09-BufferOverflow/Buffer_Overflow.pdf) |
 | 10 | Coming soon... | - | - |
 
 ---
