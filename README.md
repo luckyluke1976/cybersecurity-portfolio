@@ -34,7 +34,7 @@
 | GCC | C Compiler | Compiling vulnerable C programs for buffer overflow analysis |
 
 ---
-## 🛡️ SOC Lab Reports (9/10)
+## 🛡️ SOC Lab Reports (10/10)
 | # | Title/README | Tool | PDF Report |
 |---|---|---|---|
 | 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | BurpSuite | [📄 PDF](SOC/01-FileUpload/EXPLOIT%20FILE%20UPLOAD.pdf) |
@@ -46,7 +46,7 @@
 | 07 | [Black Box Penetration Test](SOC/Black%20Box/README.md) | Nmap, Metasploit | [📄 PDF](SOC/Black%20Box/Black%20Box.pdf) |
 | 08 | [MS17-010 Post-Exploitation & MySQL Misconfiguration](SOC/07-MS17010-Meterpreter/README.md) | Metasploit, Meterpreter, MySQL | [📄 PDF](SOC/07-MS17010-Meterpreter/Ms17-010%2BMeterpreter.pdf) |
 | 09 | [Buffer Overflow in C](SOC/Buffer%20Overflow/README.md) | GCC, C Language | [📄 PDF](SOC/Buffer%20Overflow/Buffer%20Overflow.pdf) |
-| 10 | Coming soon... | - | - |
+| 10 | [Network Traffic Analysis with Wireshark](SOC/10-Wireshark-Traffic-Analysis/README.md) | Wireshark | [📄 PDF](SOC/10-Wireshark-Traffic-Analysis/Network_Traffic_Analysis_with_wireshark.pdf) |
 
 ---
 ## ⚔️ HTB Machines
