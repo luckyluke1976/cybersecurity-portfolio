@@ -46,7 +46,7 @@
 | 07 | [Black Box Penetration Test](SOC/Black%20Box/README.md) | Nmap, Metasploit | [📄 PDF](SOC/Black%20Box/Black%20Box.pdf) |
 | 08 | [MS17-010 Post-Exploitation & MySQL Misconfiguration](SOC/07-MS17010-Meterpreter/README.md) | Metasploit, Meterpreter, MySQL | [📄 PDF](SOC/07-MS17010-Meterpreter/Ms17-010%2BMeterpreter.pdf) |
 | 09 | [Buffer Overflow in C](SOC/Buffer%20Overflow/README.md) | GCC, C Language | [📄 PDF](SOC/Buffer%20Overflow/Buffer%20Overflow.pdf) |
-| 10 | [Network Traffic Analysis with Wireshark](SOC/10-Wireshark-Traffic-Analysis/README.md) | Wireshark | [📄 PDF](SOC/10-Wireshark-Traffic-Analysis/Network_Traffic_Analysis_with_wireshark.pdf) |
+| 10 | [Incident Response & Malware Analysis](SOC/10-Incident-Response/README.md) | ANY.RUN, MITRE ATT&CK | [📄 PDF](SOC/10-Incident-Response/Incident_Response_and_Malware_Analysis.pdf) |
 
 ---
 ## ⚔️ HTB Machines
@@ -80,3 +80,11 @@
 | 07 | [Three](HTB/Three/README.md) | Linux | Very Easy | S3 bucket misconfiguration, PHP RCE |
 
 </sub>
+
+---
+
+## 🔬 Projects
+
+| Project | Description | README | PDF |
+|---|---|---|---|
+| [CyberLens](Projects/CyberLens/README.md) | AI-powered security assistant for Even Realities G2 smart glasses. Real-time concept recognition, audio transcription and contextual definitions during study and labs. | [📖 README](Projects/CyberLens/README.md) | [📄 PDF](Projects/CyberLens/CyberLens.pdf) |
