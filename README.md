@@ -85,6 +85,6 @@
 
 ## 🔬 Projects
 
-| Project | Description | README | PDF |
-|---|---|---|---|
-| [CyberLens](Projects/CyberLens/README.md) | AI-powered security assistant for Even Realities G2 smart glasses. Real-time concept recognition, audio transcription and contextual definitions during study and labs. | [📖 README](Projects/CyberLens/README.md) | [📄 PDF](Projects/CyberLens/CyberLens.pdf) |
+| Project | Description | README |
+|---|---|---|
+| [CyberLens](Projects/Cyberlens/README.md) | AI-powered security assistant for Even Realities G2 smart glasses. Real-time concept recognition, audio transcription and contextual definitions during study and labs. | [📖 README](Projects/Cyberlens/README.md) |
