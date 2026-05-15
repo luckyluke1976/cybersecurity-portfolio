@@ -6,6 +6,20 @@
 
 ---
 
+> **SECURITY & PRIVACY NOTICE**
+>
+> CyberLens is designed and built in full compliance with cybersecurity best practices and privacy principles.
+>
+> - **Local-first architecture** — all processing runs on your machine by default. No data is transmitted externally unless you explicitly invoke an OSINT or threat intel module.
+> - **CIA Triad as design foundation** — every architectural decision is evaluated against Confidentiality, Integrity, and Availability.
+> - **Zero persistence by default** — session data is stored in RAM only, with a 24-hour TTL. Nothing is written to disk unless explicitly requested.
+> - **Minimal data exposure** — external API calls send only the minimum required data (a CVE code, an IP address, a hash). No metadata, no session context, no user data.
+> - **No credentials ever leave the host** — API keys are stored in `.env` and never committed to version control or transmitted over the network.
+> - **Principle of least privilege** — each module has access only to what it needs. OSINT modules are isolated and require explicit invocation.
+> - **Transparent external calls** — every module in this documentation explicitly states whether it makes external API calls and exactly what data is sent.
+
+---
+
 ## Table of Contents
 
 1. [What Is CyberLens?](#1-what-is-cyberlens)
@@ -911,9 +925,7 @@ These rules are non-negotiable.
 
 ## 18. About the Author
 
-Built by **Luca Danisi** -- aspiring SOC Analyst, targeting Vienna.  
+Built by **Luca Danisi** -- aspiring SOC Analyst.  
 Finance and law background, pivoting into cybersecurity.
-
-**Cert roadmap:** CCST -> Security+ -> CySA+ -> ISO 27001 -> CISM
 
 Portfolio: [github.com/luckyluke1976/cybersecurity-portfolio](https://github.com/luckyluke1976/cybersecurity-portfolio)
