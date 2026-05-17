@@ -39,17 +39,18 @@
    - [Subnet Calculator](#87-subnet-calculator)
    - [Port Lookup](#88-port-lookup)
    - [MITRE ATT&CK Reference](#89-mitre-attck-reference)
-   - [Cheat Sheets](#810-cheat-sheets)
-   - [Troubleshooting Guide](#811-troubleshooting-guide)
-   - [IR Playbooks (NIST SP 800-61)](#812-ir-playbooks-nist-sp-800-61)
-   - [Log Code Reference](#813-log-code-reference)
-   - [Log Code by Category](#814-log-code-by-category)
-   - [Encoder / Decoder](#815-encoder--decoder)
-   - [Password Analyzer](#816-password-analyzer)
-   - [Timeline Builder](#817-timeline-builder)
-   - [Firewall / ACL Generator](#818-firewall--acl-generator)
-   - [Threat Intel Live](#819-threat-intel-live)
-   - [Session Log](#820-session-log)
+   - [D3FEND Defensive Framework](#810-d3fend-defensive-framework)
+   - [Cheat Sheets](#811-cheat-sheets)
+   - [Troubleshooting Guide](#812-troubleshooting-guide)
+   - [IR Playbooks (NIST SP 800-61)](#813-ir-playbooks-nist-sp-800-61)
+   - [Log Code Reference](#814-log-code-reference)
+   - [Log Code by Category](#815-log-code-by-category)
+   - [Encoder / Decoder](#816-encoder--decoder)
+   - [Password Analyzer](#817-password-analyzer)
+   - [Timeline Builder](#818-timeline-builder)
+   - [Firewall / ACL Generator](#819-firewall--acl-generator)
+   - [Threat Intel Live](#820-threat-intel-live)
+   - [Session Log](#821-session-log)
 9. [Tips Module — Live Interview Coach](#9-tips-module--live-interview-coach)
 10. [Mobile Web App](#10-mobile-web-app)
 11. [Privacy & Security Model](#11-privacy--security-model)
@@ -69,11 +70,12 @@ CyberLens is a wearable SOC assistant built for junior analysts.
 
 It runs on **Even Realities G2** smart glasses and connects to a local Node.js server (port 3000) via the Even Hub SDK. You query it by voice; results appear on your glasses display in real time.
 
-**20 active modules** cover the full SOC analyst workflow:
+**21 active modules** cover the full SOC analyst workflow:
 - Triage: CVE lookups, IP OSINT, IOC extraction and enrichment
 - Investigation: subnet calc, DNS, hash lookup, log codes, MITRE ATT&CK
 - Response: IR playbooks (20 NIST SP 800-61 scenarios), troubleshooting guides, timeline builder
 - Reference: cheat sheets, ACL generator, encoder/decoder, password analyzer
+- **Defense mapping: MITRE D3FEND — 271 defensive countermeasures mapped to ATT&CK**
 
 There is also a **mobile web app** (browser-based dashboard) for use when the glasses are not available, and a **Tips module** that acts as a real-time interview coach.
 
@@ -108,14 +110,14 @@ The glasses connect to the host machine via the **Even Hub SDK**. The SOC server
         |
         v
 [Node.js SOC Server -- localhost:3000]
-  server/index.js -- router, 25 handlers, Claude fallback
+  server/index.js -- router, 26 handlers, Claude fallback
         |
         v
 [G2 Display -- 56 chars/line, 10 lines max, ASCII only]
 ```
 
 **Data flow:**
-1. You speak a command (e.g. `ip 185.220.101.45`)
+1. You speak a command (e.g. `defend T1059`)
 2. The TypeScript app parses the voice input and routes it to the correct server endpoint
 3. The server fetches or computes the result
 4. The result is formatted by the display layer (56-char wrap, ASCII sanitisation)
@@ -164,7 +166,7 @@ SONIOX_API_KEY=your_key_here
 FIRECRAWL_API_KEY=your_key_here
 ```
 
-All **static modules** (port lookup, cheat sheets, playbooks, log codes, MITRE, subnet calc, encoder, password analyzer, ACL generator) work without any API keys.
+All **static modules** (port lookup, cheat sheets, playbooks, log codes, MITRE ATT&CK, D3FEND, subnet calc, encoder, password analyzer, ACL generator) work without any API keys.
 
 ### Start the SOC server
 
@@ -223,7 +225,7 @@ Back navigation is context-aware: double-click returns you to the most recent me
 
 ## 7. Home Screen & Categories
 
-On launch, the home screen displays four categories:
+On launch, the home screen displays five categories:
 
 | Category | Modules |
 |---|---|
@@ -231,6 +233,7 @@ On launch, the home screen displays four categories:
 | **INVESTIGATE** | DNS, Subnet Calc, MITRE ATT&CK, Log Codes, Password Analyzer |
 | **RESPOND** | IR Playbooks, Troubleshooting, Timeline Builder, ACL Generator |
 | **REFERENCE** | Port Lookup, Cheat Sheets, Encoder/Decoder, Threat Intel Live |
+| **D3FEND** | Defensive countermeasures mapped to ATT&CK (271 techniques, 7 tactics) |
 
 You can navigate the menu with the ring, or skip it entirely and trigger any module directly by voice from any screen.
 
@@ -418,7 +421,90 @@ The local database covers the **100 most common ATT&CK techniques**. For the ful
 
 ---
 
-### 8.10 Cheat Sheets
+### 8.10 D3FEND Defensive Framework
+
+**Trigger:** `defend <query>` or `d3fend <query>`  
+**External API:** D3FEND public API (optional, for ATT&CK → D3FEND mapping only)  
+**API key required:** None  
+**Data source:** Local `d3fend.json` (271 techniques, v1.4.0) + optional live API
+
+The D3FEND module maps **MITRE ATT&CK offensive techniques to defensive countermeasures** using the MITRE D3FEND knowledge graph. It covers 7 defensive tactics and 271 techniques organised in a 3-level hierarchy.
+
+**D3FEND Tactics:**
+
+| Tactic | Purpose | Techniques |
+|---|---|---|
+| **Model** | Map assets, networks, and risks | 27 |
+| **Harden** | Reduce attack surface | 55 |
+| **Detect** | Identify malicious activity | 90 |
+| **Isolate** | Contain and segment threats | 57 |
+| **Deceive** | Lure and expose attackers | 11 |
+| **Evict** | Remove active threats | 19 |
+| **Restore** | Recover after an incident | 12 |
+
+**Syntax:**
+
+```
+defend T1059
+```
+Given an ATT&CK technique ID, returns the D3FEND countermeasures that apply. Queries the D3FEND public API live; falls back to local JSON if offline.
+
+```
+defend D3-SEA
+```
+Returns full detail for a specific D3FEND technique (ID, tactic, definition).
+
+```
+defend script execution
+```
+Full-text keyword search across all 271 D3FEND techniques and definitions.
+
+```
+defend list detect
+```
+Lists all techniques in a given D3FEND tactic (model / harden / detect / isolate / deceive / evict / restore).
+
+```
+defend tactics
+```
+Shows all 7 D3FEND tactics with technique counts.
+
+**Sample output (`defend T1059`):**
+
+```
+[D3FEND] T1059 -- Countermeasures:
+
+D3-SEA Script Execution Analysis
+  Tactic: Detect
+D3-SCF System Call Filtering
+  Tactic: Isolate
+D3-EAL Executable Allowlisting
+  Tactic: Isolate
+D3-PA  Process Analysis
+  Tactic: Detect
+```
+
+**Sample output (`defend D3-SEA`):**
+
+```
+[D3FEND] D3-SEA
+Script Execution Analysis
+
+Tactic   : Detect
+Technique : Process Analysis
+
+Definition:
+Analyzing the execution of a script
+to detect unauthorized user activity.
+
+Ref: d3fend.mitre.org/technique/...
+```
+
+**Privacy note:** The ATT&CK→D3FEND lookup (`defend T1059`) sends only the ATT&CK technique ID to `d3fend.mitre.org`. All other queries run entirely locally.
+
+---
+
+### 8.11 Cheat Sheets
 
 **Trigger:** `cheat <tool>`  
 **Example:** `cheat nmap`  
@@ -443,7 +529,7 @@ Returns a compact command reference for common SOC tools.
 
 ---
 
-### 8.11 Troubleshooting Guide
+### 8.12 Troubleshooting Guide
 
 **Trigger:** `trouble <scenario>`  
 **Example:** `trouble no-internet`  
@@ -464,7 +550,7 @@ Returns a numbered step-by-step diagnostic guide.
 
 ---
 
-### 8.12 IR Playbooks (NIST SP 800-61)
+### 8.13 IR Playbooks (NIST SP 800-61)
 
 **Trigger:** `playbook <scenario>` or `playbook <scenario> <phase>`  
 **Examples:**
@@ -519,7 +605,7 @@ RANSOMWARE -- CONTAINMENT
 
 ---
 
-### 8.13 Log Code Reference
+### 8.14 Log Code Reference
 
 **Trigger:** `log? <code>`  
 **Example:** `log? 4625`  
@@ -542,7 +628,7 @@ Notes    : Multiple 4625 in short
 
 ---
 
-### 8.14 Log Code by Category
+### 8.15 Log Code by Category
 
 **Trigger:** `logref <category>`  
 **Example:** `logref windows`  
@@ -554,7 +640,7 @@ Returns all log codes in a given category with one-line descriptions.
 
 ---
 
-### 8.15 Encoder / Decoder
+### 8.16 Encoder / Decoder
 
 **Trigger:** `encode <format> <string>` or `decode <format> <string>`  
 **Example:** `encode base64 hello world`  
@@ -578,7 +664,7 @@ Output : aGVsbG8gd29ybGQ=
 
 ---
 
-### 8.16 Password Analyzer
+### 8.17 Password Analyzer
 
 **Trigger:** `pwcheck <password>`  
 **Example:** `pwcheck P@ssw0rd123`  
@@ -601,7 +687,7 @@ Notes    : Pattern detected (leet
 
 ---
 
-### 8.17 Timeline Builder
+### 8.18 Timeline Builder
 
 **Trigger:** `timeline add <time> <event>` or `timeline show`  
 **Example:** `timeline add 09:15 failed login from 10.0.0.5`  
@@ -628,7 +714,7 @@ INCIDENT TIMELINE
 
 ---
 
-### 8.18 Firewall / ACL Generator
+### 8.19 Firewall / ACL Generator
 
 **Trigger:** `acl <rule>`  
 **Example:** `acl allow 10.0.0.5 -> any 445 tcp`  
@@ -657,7 +743,7 @@ New-NetFirewallRule -Direction
 
 ---
 
-### 8.19 Threat Intel Live
+### 8.20 Threat Intel Live
 
 **Trigger:** `threat <keyword>`  
 **Example:** `threat log4j`  
@@ -670,7 +756,7 @@ Performs a live threat intelligence query across multiple sources and returns a 
 
 ---
 
-### 8.20 Session Log
+### 8.21 Session Log
 
 **Trigger:** `log` or `log delete <id>`  
 **External API:** None (in-memory, TTL 24h)
@@ -682,7 +768,7 @@ SESSION LOG
 [09:15] ip 185.220.101.45 -> MALICIOUS
 [09:22] cve CVE-2021-44228 -> CRITICAL
 [09:30] playbook ransomware -> displayed
-[09:44] timeline add 09:15 ...
+[09:44] defend T1059 -> 4 countermeasures
 ```
 
 ---
@@ -755,6 +841,8 @@ CyberLens is built local-first. The CIA Triad is the design foundation for every
 | IR Playbooks (20 scenarios) | None | Nothing |
 | Log Code Reference | None | Nothing |
 | MITRE ATT&CK | None | Nothing |
+| D3FEND (keyword / ID lookup) | None | Nothing |
+| D3FEND (ATT&CK → countermeasures) | d3fend.mitre.org API | ATT&CK technique ID only |
 | Encoder / Decoder | None | Nothing |
 | Password Analyzer | None | Nothing |
 | Timeline Builder | None | Nothing |
@@ -781,7 +869,7 @@ CyberLens is built local-first. The CIA Triad is the design foundation for every
 
 | Module | Status |
 |---|---|
-| Home screen + ring navigation | Working |
+| Home screen + ring navigation (5 categories) | Working |
 | IOC List mode (auto-parse + ring nav) | Working |
 | CVE Lookup | Working |
 | IOC Extractor | Working |
@@ -792,6 +880,7 @@ CyberLens is built local-first. The CIA Triad is the design foundation for every
 | Subnet Calculator | Working |
 | Port Lookup | Working |
 | MITRE ATT&CK Reference | Working |
+| **D3FEND Defensive Framework** | **Working** |
 | Cheat Sheets | Working |
 | Troubleshooting Guide | Working |
 | IR Playbooks (20 scenarios) | Working |
@@ -818,6 +907,7 @@ CyberLens is built local-first. The CIA Triad is the design foundation for every
 | HIGH | Tips (LIVE) | `/tips/start/live` fails silently without `SONIOX_API_KEY`. No user-facing error message displayed. |
 | HIGH | Display | Some CVE and Threat Intel responses may exceed 10-line / 672-char limit. Pagination prompt not consistently triggered on all overflow paths. |
 | MEDIUM | Threat Intel Live | Firecrawl queries fail with no retry on 10s timeout. Single point of failure with no fallback. |
+| LOW | D3FEND | ATT&CK→D3FEND live API lookup requires internet. Offline fallback uses local keyword search which may return partial matches. |
 
 ---
 
@@ -842,8 +932,10 @@ Never commit `.env` to version control. Use `.env.example` to document required 
 cyberlens-g2/
 |
 |-- server/
-|   |-- index.js                    # Main router -- 25 handlers, Claude fallback
+|   |-- index.js                    # Main router -- 26 handlers, Claude fallback
 |   |-- tips-router.js              # /tips endpoints, Soniox WebSocket
+|   |-- d3fend-router.js            # /d3fend endpoints, D3FEND lookup engine
+|   |-- d3fend.json                 # 271 D3FEND techniques, v1.4.0 (local)
 |   |-- data/
 |       |-- ports.json              # 47 port definitions
 |       |-- cheatsheets.json        # 10 tool cheat sheets
@@ -854,7 +946,7 @@ cyberlens-g2/
 |   |-- playbooks/                  # 20 IR playbook JSON files
 |
 |-- src/
-|   |-- main.ts                     # G2 UI, 4 menu states, IOC nav
+|   |-- main.ts                     # G2 UI, 5 menu states, IOC nav
 |   |-- display.ts                  # 56-char formatter, ASCII sanitiser
 |   |-- commands.ts                 # Voice command parser and router
 |
@@ -896,7 +988,7 @@ These rules are non-negotiable.
 - ASCII only -- test with Unicode input to confirm `?` sanitisation works
 
 **Commits:**
-- Message format: imperative present tense (`Add MITRE module`, `Fix OSINT timeout`)
+- Message format: imperative present tense (`Add D3FEND module`, `Fix OSINT timeout`)
 - Link issue number where applicable
 - Pre-commit hooks: linting + type check
 
