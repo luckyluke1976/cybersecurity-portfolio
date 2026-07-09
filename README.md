@@ -10,8 +10,26 @@
 ## 🏅 Certifications
 | Certification | Status | Year |
 |---|---|---|
-| Cisco CCST Cybersecurity | 🔄 In progress | 2026 |
-| CompTIA Security+ | 🗓️ Planned | 2026 |
+| CompTIA Security+ | ✅ Achieved | 2026 |
+| ISO/IEC 27001 Lead Implementer (PECB) | 🗓️ Planned | 2026 |
+
+---
+## ⚖️ Governance, Risk & Compliance
+
+> Applying a legal + finance background to information security governance.  
+> GRC deliverables built around ISO/IEC 27001, NIS2 and DORA — focused on the EU financial sector.
+
+### 📑 Deliverables (6)
+| # | Deliverable | Framework | Status |
+|---|---|---|---|
+| 01 | ISMS Scope & Statement of Applicability (SoA) | ISO/IEC 27001 | 🔄 In progress |
+| 02 | Risk Assessment & Treatment Plan | ISO/IEC 27001 | 🔄 In progress |
+| 03 | Information Security Policy Set (Annex A aligned) | ISO/IEC 27001 | 🔄 In progress |
+| 04 | NIS2 Gap Analysis | NIS2 Directive | 🔄 In progress |
+| 05 | DORA Compliance Mapping (ICT Risk Framework) | DORA | 🔄 In progress |
+| 06 | ISO 27001 Internal Audit Checklist & Report | ISO/IEC 27001 | 🔄 In progress |
+
+<sub>🔜 Deliverables are being built as part of my GRC specialization path — links will be added as each document is published.</sub>
 
 ---
 ## 🧰 Tools & Skills
