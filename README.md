@@ -1,6 +1,6 @@
 # 🛡️ Cybersecurity Portfolio — Luca Danisi
-> Building my path in cybersecurity, one lab at a time.  
-> Hands-on projects and writeups — learning by doing, documenting everything.
+> Bridging law, finance and cybersecurity — specializing in Governance, Risk & Compliance.  
+> Hands-on technical labs backed by a GRC focus on ISO/IEC 27001, NIS2 and DORA.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luca-danisi-5a80a227)
 [![Credly](https://img.shields.io/badge/Credly-FF6B00?style=flat&logo=credly&logoColor=white)](https://www.credly.com/users/luca-danisi)
@@ -20,16 +20,16 @@
 > GRC deliverables built around ISO/IEC 27001, NIS2 and DORA — focused on the EU financial sector.
 
 ### 📑 Deliverables (6)
-| # | Deliverable | Framework | Status |
-|---|---|---|---|
-| 01 | ISMS Scope & Statement of Applicability (SoA) | ISO/IEC 27001 | 🔄 In progress |
-| 02 | Risk Assessment & Treatment Plan | ISO/IEC 27001 | 🔄 In progress |
-| 03 | Information Security Policy Set (Annex A aligned) | ISO/IEC 27001 | 🔄 In progress |
-| 04 | NIS2 Gap Analysis | NIS2 Directive | 🔄 In progress |
-| 05 | DORA Compliance Mapping (ICT Risk Framework) | DORA | 🔄 In progress |
-| 06 | ISO 27001 Internal Audit Checklist & Report | ISO/IEC 27001 | 🔄 In progress |
+| # | Deliverable | Framework | README | PDF |
+|---|---|---|---|---|
+| 01 | ISMS Scope & Statement of Applicability (SoA) | ISO/IEC 27001 | 🔜 | 🔜 |
+| 02 | Risk Assessment & Treatment Plan | ISO/IEC 27001 | 🔜 | 🔜 |
+| 03 | Information Security Policy Set (Annex A aligned) | ISO/IEC 27001 | 🔜 | 🔜 |
+| 04 | NIS2 Gap Analysis | NIS2 Directive | 🔜 | 🔜 |
+| 05 | DORA Compliance Mapping (ICT Risk Framework) | DORA | 🔜 | 🔜 |
+| 06 | ISO 27001 Internal Audit Checklist & Report | ISO/IEC 27001 | 🔜 | 🔜 |
 
-<sub>🔜 Deliverables are being built as part of my GRC specialization path — links will be added as each document is published.</sub>
+<sub>🔜 Deliverables are being built as part of my GRC specialization path — README and PDF links will be added as each document is published.</sub>
 
 ---
 ## 🧰 Tools & Skills
