@@ -1,1 +1,17 @@
+## What's inside
 
+**File:** [`VindobonaPay_SoA.pdf`](./VindobonaPay_SoA.pdf)
+
+- **Statement of Applicability:** all 93 Annex A controls with:
+  - Applicable? (Yes / No)
+  - Justification for inclusion or exclusion
+  - Implementation status (Implemented / Partially implemented / Planned),
+    color-coded
+  - Control owner
+  - Related Risk ID *(will be populated after Deliverable 02 — see note below)*
+  - Evidence / Reference (policy, procedure or configuration supporting
+    the control)
+  - Remediation action with target date (for controls not yet fully
+    implemented)
+- **Summary page:** applicable and excluded controls, implementation
+  status and open remediation actions.
