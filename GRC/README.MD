@@ -1,8 +1,7 @@
 # ⚖️ Governance, Risk & Compliance
 
 Applying a legal + finance background to information security governance.
-GRC deliverables built around ISO/IEC 27001, NIS2 and DORA — focused on
-the EU financial sector.
+GRC deliverables built around ISO/IEC 27001, NIS2 and DORA.
 
 All deliverables use the same fictional case study: **VindobonaPay GmbH**,
 a Vienna-based fintech (~80 employees, Microsoft 365 + Azure, hybrid work,
@@ -40,3 +39,21 @@ the basis for every decision in the deliverables below.
   go beyond Annex A.
 - **Controls are tested, not just documented.** Deliverable 06 covers
   control testing, evidence collection and a small Python automation.
+
+## 🤖 Note on tooling and AI use
+
+This portfolio was produced with the support of an AI assistant
+(Claude, Anthropic), used the way a GRC analyst would use any
+productivity tool: drafting, structuring documents and speeding up
+repetitive work such as building tables and formatting deliverables.
+
+The scenario, the applicability and risk decisions, the control
+ownership model and the priorities in this portfolio are my own. Every
+statement in these documents is one I can explain and defend, and the
+AI-assisted drafts were reviewed and corrected against the requirements
+of ISO/IEC 27001, NIS2 and DORA.
+
+Being explicit about this is deliberate: AI tools are already part of
+day-to-day work in governance and compliance, and the relevant skill is
+using them under review and accountability — not pretending they are
+not used.
