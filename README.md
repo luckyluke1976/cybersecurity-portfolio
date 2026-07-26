@@ -11,30 +11,37 @@
 | Certification | Status | Year |
 |---|---|---|
 | CompTIA Security+ | ✅ Achieved | 2026 |
-| ISO/IEC 27001 Lead Implementer (PECB) | 🗓️ Planned | 2026 |
+| ISO/IEC 27001 Lead Implementer (PECB) | ✅ Achieved | 2026 |
 
 ---
 ## ⚖️ Governance, Risk & Compliance
 
 > Applying a legal + finance background to information security governance.  
-> GRC deliverables built around ISO/IEC 27001, NIS2 and DORA — focused on the EU financial sector.
+> GRC deliverables built around ISO/IEC 27001, NIS2 and DORA.
 
-### 📑 Deliverables (6)
+All deliverables use the same fictional case study: **VindobonaPay GmbH**, a Vienna-based fintech (~80 employees, Microsoft 365 + Azure, hybrid work, payment data processing). The full scenario is defined in the Organization Context, which is the basis for every decision in the deliverables below.
+
+### 📑 Deliverables
 | # | Deliverable | Framework | README | PDF |
 |---|---|---|---|---|
-| 01 | ISMS Scope & Statement of Applicability (SoA) | ISO/IEC 27001 | 🔜 | 🔜 |
-| 02 | Risk Assessment & Treatment Plan | ISO/IEC 27001 | 🔜 | 🔜 |
-| 03 | Information Security Policy Set (Annex A aligned) | ISO/IEC 27001 | 🔜 | 🔜 |
-| 04 | NIS2 Gap Analysis | NIS2 Directive | 🔜 | 🔜 |
-| 05 | DORA Compliance Mapping (ICT Risk Framework) | DORA | 🔜 | 🔜 |
-| 06 | ISO 27001 Internal Audit Checklist & Report | ISO/IEC 27001 | 🔜 | 🔜 |
+| 00 | Organization Context (scenario) | ISO/IEC 27001 Clause 4 | 🔜 | — |
+| 01 | Statement of Applicability (SoA) | ISO/IEC 27001 | 🔜 | 🔜 |
+| 02 | Risk Assessment & Risk Register | ISO/IEC 27001 / NIST SP 800-30 | 🔜 | 🔜 |
+| 03 | Control Mapping Matrix (ISO ↔ NIS2 ↔ DORA ↔ NIST CSF 2.0) | Multi-framework | 🔜 | 🔜 |
+| 04 | NIS2 Gap Analysis | NIS2 (EU 2022/2555) | 🔜 | 🔜 |
+| 05 | DORA Compliance Mapping | DORA (EU 2022/2554) | 🔜 | 🔜 |
+| 06 | Control Testing & Evidence Automation | ISO 27001 / audit practice | 🔜 | 🔜 |
 
 <sub>🔜 Deliverables are being built as part of my GRC specialization path — README and PDF links will be added as each document is published.</sub>
 
 ---
 ## 🧰 Tools & Skills
+
+<sub>
+
 | Tool | Category | Usage |
 |---|---|---|
+| Python | Scripting & Automation | Compliance checks, evidence collection, data processing |
 | Nmap | Reconnaissance | Port scanning, service enumeration |
 | Wireshark | Network Analysis | Packet capture and traffic analysis |
 | Splunk | SIEM | Log analysis, alert monitoring |
@@ -51,8 +58,13 @@
 | Nishang | Post Exploitation | PowerShell reverse shells |
 | GCC | C Compiler | Compiling vulnerable C programs for buffer overflow analysis |
 
+</sub>
+
 ---
 ## 🛡️ SOC Lab Reports (10/10)
+
+<sub>
+
 | # | Title/README | Tool | PDF Report |
 |---|---|---|---|
 | 01 | [File Upload Exploit + BurpSuite](SOC/01-FileUpload/README.md) | BurpSuite | [📄 PDF](SOC/01-FileUpload/EXPLOIT%20FILE%20UPLOAD.pdf) |
@@ -66,10 +78,15 @@
 | 09 | [Buffer Overflow in C](SOC/Buffer%20Overflow/README.md) | GCC, C Language | [📄 PDF](SOC/Buffer%20Overflow/Buffer%20Overflow.pdf) |
 | 10 | [Incident Response & Malware Analysis](SOC/Incident-Response/README.md) | ANY.RUN, MITRE ATT&CK |[📄 PDF](SOC/Incident-Response/Incident%20Response%20%26%20Malware%20Analysis.pdf) |
 
+</sub>
+
 ---
 ## ⚔️ HTB Machines
 
-### 🔴 Main Machines (8/8)
+### <sub>🔴 Main Machines (8/8)</sub>
+
+<sub>
+
 | # | Machine | OS | Difficulty | Technique |
 |---|---|---|---|---|
 | 01 | [Lame](HTB/Lame/README.md) | Linux | Easy | SMB exploitation, CVE-2007-2447 |
@@ -81,7 +98,7 @@
 | 07 | [Optimum](HTB/Optimum/README.md) | Windows | Easy | HttpFileServer RCE, MS16-032 |
 | 08 | [Bastard](HTB/Bastard/README.md) | Windows | Medium | Drupal 7 Services RCE, MS15-051 |
 
----
+</sub>
 
 ### <sub>🟢 Starting Point</sub>
 
