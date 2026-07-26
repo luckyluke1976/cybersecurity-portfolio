@@ -6,17 +6,21 @@ the EU financial sector.
 
 All deliverables use the same fictional case study: **VindobonaPay GmbH**,
 a Vienna-based fintech (~80 employees, Microsoft 365 + Azure, hybrid work,
-payment data processing).
+payment data processing). The full scenario — company profile, roles,
+technology and current security posture — is described in
+[00 — Organization Context](./00-organization-context/README.md), which is
+the basis for every decision in the deliverables below.
 
 > ⚠️ VindobonaPay GmbH is a fictional company created for educational
 > purposes. No real client data is used.
 
-## 📑 Deliverables (6)
+## 📑 Deliverables
 
 | # | Deliverable | Framework | README | PDF |
 |---|------------|-----------|--------|-----|
+| 00 | Organization Context (scenario) | ISO/IEC 27001 Clause 4 | [📄 README](./00-organization-context/README.md) | — |
 | 01 | Statement of Applicability (SoA) | ISO/IEC 27001 | [📄 README](./01-statement-of-applicability/README.md) | [📕 PDF](./01-statement-of-applicability/VindobonaPay_SoA.pdf) |
-| 02 | Risk Assessment & Risk Register | ISO/IEC 27001 / NIST SP 800-30 | 🔜 | 🔜 |
+| 02 | Risk Assessment & Risk Register | ISO/IEC 27001 / NIST SP 800-30 | [📄 README](./02-risk-assessment-risk-register/README.md) | [📕 PDF](./02-risk-assessment-risk-register/VindobonaPay_Risk_Register.pdf) |
 | 03 | Control Mapping Matrix (ISO ↔ NIS2 ↔ DORA ↔ NIST CSF 2.0) | Multi-framework | 🔜 | 🔜 |
 | 04 | NIS2 Gap Analysis | NIS2 (EU 2022/2555) | 🔜 | 🔜 |
 | 05 | DORA Compliance Mapping | DORA (EU 2022/2554) | 🔜 | 🔜 |
@@ -24,6 +28,10 @@ payment data processing).
 
 ## 🧭 Approach
 
+- **Context first.** The organization context (00) defines the company,
+  its regulatory exposure and its current security posture. Every
+  applicability decision, risk score and control owner in the following
+  deliverables is derived from it.
 - **One scenario, multiple frameworks** — every deliverable refers to the
   same organization, scope and risk context, as in real GRC work.
 - **Framework overlap is leveraged, not assumed.** ISO/IEC 27001 provides
