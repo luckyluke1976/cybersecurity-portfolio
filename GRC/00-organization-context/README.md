@@ -7,13 +7,18 @@ deliverables in this portfolio**. Every decision in the Statement of
 Applicability (Deliverable 01), the Risk Register (Deliverable 02) and
 the following deliverables is derived from the context described here.
 
-In a real ISMS this corresponds to **ISO/IEC 27001 Clause 4 — Context of
-the organization**: before assessing risks or selecting controls, you
-need to understand the organization itself.
+In a real ISMS, this document would support the activities required by
+**ISO/IEC 27001 Clause 4 — Context of the organization**: understanding
+the organization, its interested parties and the boundaries of the ISMS,
+before assessing risks or selecting controls.
 
-> ⚠️ VindobonaPay GmbH is a fictional company created for educational
+> ⚠️ **Assumptions and limitations**
+> VindobonaPay GmbH is a fictional company created for educational
 > purposes. Any similarity to real companies is coincidental. No real
-> client data is used.
+> client data is used. Control applicability, implementation status,
+> maturity assessments and risk scores are based on fictional but
+> realistic assumptions: they are illustrative and do not represent
+> audit findings or work performed for a real organization.
 
 ## 1. Company profile
 
@@ -23,10 +28,10 @@ need to understand the organization itself.
 | **Founded** | 2019 |
 | **Headquarters** | Vienna, Austria |
 | **Employees** | ~80 |
-| **Business** | Payment services for e-commerce merchants (SaaS platform) |
+| **Business** | Licensed payment institution providing payment services to e-commerce merchants through a proprietary SaaS platform |
 | **Customers** | Online merchants in Austria and Germany |
 | **Supervision** | Austrian Financial Market Authority (FMA) |
-| **Key regulations** | DORA, NIS2, GDPR, PSD2 |
+| **Regulatory landscape** | DORA, GDPR, PSD2/ZaDiG 2018; NIS2 included for comparative compliance mapping |
 
 The company processes **payment transactions and customer personal
 data**, which makes information security a core business requirement,
@@ -77,7 +82,7 @@ for the residual risk scores in the Risk Register.
 | Area | Current state | Related Annex A controls |
 |---|---|---|
 | Security policies | Core policies approved (InfoSec, Access Control, Acceptable Use, Remote Working) | A.5.1, A.5.15, A.5.10, A.6.7 |
-| Identity & authentication | MFA and Conditional Access enforced for all users; enrollment for privileged accounts almost complete | A.8.5, A.8.2 |
+| Identity & authentication | MFA and Conditional Access enforced for all users; phishing-resistant MFA (FIDO2) and Privileged Identity Management rollout for administrative accounts still in progress | A.8.5, A.8.2 |
 | Access management | RBAC in place on payment systems; access reviews still ad-hoc, quarterly cycle being formalized | A.8.3, A.5.18 |
 | Segregation of duties | Matrix for payment operations in draft | A.5.3 |
 | Endpoint protection | EDR on all endpoints; Intune MDM with hardening baseline and encryption | A.8.7, A.8.1, A.7.9 |
@@ -85,26 +90,29 @@ for the residual risk scores in the Risk Register.
 | Data classification | Policy in draft; Microsoft Purview labelling planned | A.5.12, A.5.13 |
 | Logging & monitoring | Log collection partially centralized; alerting use cases being defined | A.8.15, A.8.16 |
 | Vulnerability & patching | Monthly scans running; patch SLAs by severity not yet defined | A.8.8 |
-| Cloud configuration | Endpoint baselines done; cloud hardening baselines in progress | A.8.9, A.5.23 |
+| Cloud configuration | Azure subscriptions partially aligned to CIS benchmarks; Defender for Cloud secure score monitored; formal cloud hardening standard and configuration drift detection in progress | A.8.9, A.5.23 |
 | Secure development | Code review + SAST in pipeline; yearly pentest; formal SDLC procedure in progress | A.8.25, A.8.28, A.8.29 |
 | Supplier management | Contracts have security clauses; structured supplier reviews and ICT supply chain procedure (DORA) still to be built | A.5.19, A.5.20, A.5.21, A.5.22 |
-| Incident management | Incident Response Plan with triage criteria in place; regulatory reporting procedure (DORA timelines) to be defined | A.5.24, A.5.31 |
+| Incident management | Incident Response Plan with triage criteria in place; event reporting channel active; lessons-learned and evidence-handling procedures partially documented; regulatory reporting procedure (DORA timelines) to be defined | A.5.24, A.5.25, A.5.26, A.5.27, A.5.28, A.6.8, A.5.31 |
 | Awareness | Yearly training + phishing simulations for all staff | A.6.3 |
 | Business continuity | BCP in draft; RTO/RPO defined; first ICT continuity test planned | A.5.29, A.5.30 |
 
 **In short:** identity, endpoints and backup are mature; data
 classification, supplier management and monitoring are under
 construction; DLP and ICT supply chain management are planned. This is
-why the SoA shows ~60% of controls implemented — and why some risks in
-the register keep a High residual score.
+why the SoA shows **~60% of applicable controls fully implemented** —
+and why some risks in the register keep a High residual score.
 
 ## 5. Why an ISMS (and why now)
 
 - Enterprise merchants increasingly ask for **ISO/IEC 27001
   certification** in vendor assessments
 - **DORA** applies to VindobonaPay as a financial entity: ICT risk
-  management, incident reporting and third-party risk obligations
-- **NIS2** and **GDPR** add further legal requirements
+  management, incident reporting and third-party risk obligations. As
+  *lex specialis*, DORA takes precedence over NIS2 for financial
+  entities — NIS2 is used in this portfolio as a comparative mapping
+  exercise
+- **GDPR** and **PSD2/ZaDiG 2018** add further legal requirements
 - A single security framework avoids answering every customer
   questionnaire from scratch
 
