@@ -29,6 +29,9 @@ The decisions in this SoA are based on the following scenario:
 - Hybrid work model (office in Vienna + remote)
 - The company processes payment and customer data
 
+Full scenario — company profile, roles, technology and current security
+posture: [00 — Organization Context](../00-organization-context/README.md).
+
 ## What's inside
 
 **File:** [`VindobonaPay_SoA.pdf`](./VindobonaPay_SoA.pdf)
@@ -39,7 +42,7 @@ The decisions in this SoA are based on the following scenario:
   - Implementation status (Implemented / Partially implemented / Planned),
     color-coded
   - Control owner
-  - Related Risk ID *(will be populated after Deliverable 02 — see note below)*
+  - Related Risk ID (linked to the Risk Register — Deliverable 02)
   - Evidence / Reference (policy, procedure or configuration supporting
     the control)
   - Remediation action with target date (for controls not yet fully
@@ -63,11 +66,11 @@ The decisions in this SoA are based on the following scenario:
   remaining controls are partially implemented or planned, with owners
   and remediation actions assigned.
 
-- **The Risk ID column is intentionally empty in v1.1.**
-  The risk assessment is built in Deliverable 02. Once the risk register
-  exists, each applicable control will be linked to the risks it treats
-  and the SoA will be updated to v2.0. This reflects how an SoA evolves
-  in practice: it is a living document, not a one-time deliverable.
+- **The Risk ID column links the SoA to the Risk Register (v2.0).**
+  Each applicable control now references the risks it treats (R-01 to
+  R-16, see Deliverable 02). Controls without a Risk ID support the ISMS
+  as baseline controls. This update reflects how an SoA evolves in
+  practice: it is a living document, not a one-time deliverable.
 
 ## Why it matters
 
@@ -79,6 +82,27 @@ default.
 ISO/IEC 27001 also provides a strong foundation for many NIS2
 requirements, but it does not guarantee full compliance — the
 cross-framework analysis is covered in Deliverable 03.
+
+## Scope and limits of this exercise
+
+This is a didactic exercise on a fictional company, not consulting work.
+
+I had no real documents or data to work from, so for each control I tried
+to reach the conclusion that would be realistic for a comparable company:
+given a fintech of this size, with this technology and this stage of its
+ISMS, which controls would apply, what state would they realistically be
+in, who would own them, and what kind of evidence would support them.
+
+The Evidence / Reference column therefore indicates the **type of
+evidence expected** for each control — a policy, a procedure, a
+configuration or a record — rather than documents that physically exist.
+In a real ISMS every reference would point to an actual document under
+document control (ISO/IEC 27001 Clause 7.5), and each one would be
+verified.
+
+What I wanted to show here is that I understand how an ISMS holds
+together: how context, risk, controls, ownership and evidence connect.
+The rest comes from working with a real organization.
 
 ## Next step in the portfolio
 
