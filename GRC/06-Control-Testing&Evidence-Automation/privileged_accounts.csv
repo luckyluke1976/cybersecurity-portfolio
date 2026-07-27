@@ -1,0 +1,13 @@
+account,owner,department,account_type,created
+adm.mwagner,Michael Wagner,IT,admin,2023-04-11
+adm.lhuber,Lena Huber,IT,admin,2023-04-11
+adm.pgruber,Paul Gruber,IT,admin,2024-02-05
+adm.sberger,Sofia Berger,Engineering,admin,2023-09-18
+adm.tmayer,Thomas Mayer,Engineering,admin,2024-06-30
+adm.kfischer,Katharina Fischer,Engineering,admin,2025-01-14
+adm.jbauer,Julia Bauer,Security,admin,2025-03-02
+adm.rsteiner,Robert Steiner,Finance,admin,2024-08-21
+svc.backup,IT Manager,IT,service,2023-04-11
+svc.deploy,Head of Engineering,Engineering,service,2023-09-18
+svc.monitoring,IT Manager,IT,service,2024-05-06
+brk.emergency,CISO,Security,break-glass,2025-06-01
