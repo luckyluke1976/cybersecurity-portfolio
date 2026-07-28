@@ -28,8 +28,8 @@ the basis for every decision in the deliverables below.
 | # | Deliverable | Framework | README | PDF |
 |---|------------|-----------|--------|-----|
 | 00 | Organization Context (scenario) | Supports ISO/IEC 27001 Clause 4 | [📄 README](./00-organization-context/README.md) | — |
-| 01 | Statement of Applicability (SoA) | ISO/IEC 27001 | [📄 README](./01-statement-of-applicability/README.md) | [📕 PDF](./01-statement-of-applicability/VindobonaPay_SoA.pdf) |
-| 02 | Risk Assessment & Risk Register | ISO/IEC 27001 / NIST SP 800-30 | [📄 README](./02-risk-assessment-risk-register/README.md) | [📕 PDF](./02-risk-assessment-risk-register/VindobonaPay_Risk_Register.pdf) |
+| 01 | Risk Assessment & Risk Register | ISO/IEC 27001 / NIST SP 800-30 | [📄 README](./01-risk-assessment-risk-register/README.md) | [📕 PDF](./01-risk-assessment-risk-register/VindobonaPay_Risk_Register.pdf) |
+| 02 | Statement of Applicability (SoA) | ISO/IEC 27001 | [📄 README](./02-statement-of-applicability/README.md) | [📕 PDF](./02-statement-of-applicability/VindobonaPay_SoA.pdf) |
 | 03 | Control Mapping Matrix (ISO ↔ NIS2 ↔ DORA ↔ NIST CSF 2.0) | Multi-framework | [📄 README](./03-control-mapping/README.md) | [📕 PDF](./03-control-mapping/VindobonaPay_Control_Mapping.pdf) |
 | 04 | NIS2 Applicability & Gap Analysis | NIS2 (EU 2022/2555) | [📄 README](./04-nis2-gap-analysis/README.md) | [📕 PDF](./04-nis2-gap-analysis/VindobonaPay_NIS2_Gap_Analysis.pdf) |
 | 05 | DORA Compliance Mapping | DORA (EU 2022/2554) | [📄 README](./05-dora-compliance-mapping/README.md) | [📕 PDF](./05-dora-compliance-mapping/VindobonaPay_DORA_Mapping.pdf) |
@@ -41,6 +41,11 @@ the basis for every decision in the deliverables below.
   its regulatory exposure and its current security posture. Every
   applicability decision, risk score and control owner in the following
   deliverables is derived from it.
+- **Risk before controls.** The deliverables follow the ISO/IEC 27001
+  implementation sequence: risks are assessed first (01), and the
+  Statement of Applicability (02) documents the controls selected to
+  treat them. The SoA is an output of the risk treatment process
+  (Clause 6.1.3), not a starting checklist.
 - **One scenario, multiple frameworks** — every deliverable refers to the
   same organization, scope and risk context, as in real GRC work.
 - **Framework overlap is leveraged, not assumed.** ISO/IEC 27001 provides
