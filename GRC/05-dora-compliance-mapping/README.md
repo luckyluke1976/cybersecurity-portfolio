@@ -101,7 +101,7 @@ For each requirement the mapping records:
 
 Status decisions stay consistent with the rest of the portfolio: a
 requirement supported only by controls marked "Partially implemented"
-in the SoA is not reported as implemented.
+in the SoA (Deliverable 02) is not reported as implemented.
 
 ## What's inside
 
@@ -135,9 +135,9 @@ in the SoA is not reported as implemented.
   classification and regulatory reporting, the resilience testing
   programme, and ICT third-party risk (register of information,
   contractual provisions, concentration risk, exit strategies). These
-  are the same three areas flagged as "Beyond ISMS" in Deliverable 03
-  and as gaps in Deliverable 04. The three documents agree because they
-  describe the same organization.
+  are the same three domains rated *No direct support* in Deliverable 03
+  and assessed as gaps in Deliverable 04. The three documents agree
+  because they describe the same organization.
 
 - **TLPT status: not currently designated.** Threat-led penetration
   testing under Articles 26–27 applies to financial entities identified
