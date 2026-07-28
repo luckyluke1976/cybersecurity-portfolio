@@ -1,4 +1,4 @@
-# Deliverable 02 — Risk Assessment & Risk Register (ISO/IEC 27001)
+# Deliverable 01 — Risk Assessment & Risk Register (ISO/IEC 27001)
 
 ## What this is
 
