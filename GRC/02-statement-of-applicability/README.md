@@ -140,4 +140,4 @@ verification.
 
 ## Next step in the portfolio
 
-➡️ Deliverable 02 — Risk Assessment & Risk Register
+➡️ Deliverable 03 — Control mapping
