@@ -1,4 +1,4 @@
-# Deliverable 01 — Statement of Applicability (ISO/IEC 27001:2022)
+# Deliverable 02 — Statement of Applicability (ISO/IEC 27001:2022)
 
 ## What this is
 
