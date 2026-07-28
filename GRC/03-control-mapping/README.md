@@ -7,7 +7,7 @@ Vienna-based licensed payment institution used across this portfolio.
 
 The matrix shows how the security domains of the company are addressed by
 four frameworks at the same time: the ISO/IEC 27001 requirements and Annex
-A controls documented in the SoA (Deliverable 01), the NIS2 Directive, the
+A controls documented in the SoA (Deliverable 02), the NIS2 Directive, the
 DORA Regulation and the NIST Cybersecurity Framework 2.0.
 
 The goal is practical: a company does not run four separate compliance
