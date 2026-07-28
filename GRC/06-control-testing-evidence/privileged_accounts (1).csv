@@ -1,0 +1,14 @@
+account,owner,department,account_type,status
+adm.mhuber,Michael Huber,IT,admin,enabled
+adm.tmayer,Theresa Mayer,IT,admin,enabled
+adm.sbauer,Stefan Bauer,IT,admin,enabled
+adm.rweber,Robert Weber,IT,admin,enabled
+adm.kwagner,Katharina Wagner,Engineering,admin,enabled
+adm.plehner,Paul Lehner,Engineering,admin,enabled
+adm.agruber,Anna Gruber,Security,admin,enabled
+adm.mfischer,Martin Fischer,Security,admin,enabled
+adm.jsteiner,Julia Steiner,Finance,admin,enabled
+svc.deploy,Head of Engineering,Engineering,service,enabled
+svc.backup,IT Manager,IT,service,enabled
+brk.emergency,CISO,Security,break_glass,enabled
+adm.former,Former Contractor,IT,admin,disabled

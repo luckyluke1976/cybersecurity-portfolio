@@ -1,0 +1,21 @@
+account,display_name,mfa_enabled,method,last_registration
+adm.mhuber,Michael Huber (admin),yes,fido2_key,2026-02-11
+adm.tmayer,Theresa Mayer (admin),yes,sms,2025-11-03
+adm.sbauer,Stefan Bauer (admin),yes,fido2_key,2026-01-20
+adm.sbauer,Stefan Bauer (admin),yes,fido2_key,2026-03-02
+adm.rweber,Robert Weber (admin),yes,fido2_key,2026-02-27
+adm.kwagner,Katharina Wagner (admin),yes,fido2_key,2026-01-15
+adm.plehner,Paul Lehner (admin),yes,certificate,2026-03-09
+adm.agruber,Anna Gruber (admin),yes,fido2_key,2026-02-02
+adm.mfischer,Martin Fischer (admin),yes,fido2_key,2026-02-02
+adm.jsteiner,Julia Steiner (admin),yes,fido2_key,2026-03-16
+svc.deploy,Deployment service account,yes,certificate,2025-09-30
+svc.backup,Backup service account,no,none,
+adm.former,Former Contractor (admin),yes,authenticator_app,2024-06-18
+t.koller,Thomas Koller,yes,authenticator_app,2026-01-08
+s.novak,Sabine Novak,yes,authenticator_app,2026-01-08
+d.pichler,Daniel Pichler,yes,fido2_key,2026-02-19
+e.wolf,Elena Wolf,yes,authenticator_app,2025-12-04
+f.brandner,Felix Brandner,yes,authenticator_app,2026-03-11
+g.leitner,Greta Leitner,yes,authenticator_app,2026-01-29
+h.moser,Hannes Moser,yes,authenticator_app,2026-02-14
