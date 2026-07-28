@@ -57,7 +57,7 @@ assessment documented in Deliverable 02.
   - Implementation status (Implemented / Partially implemented / Planned),
     color-coded
   - Control owner
-  - Related Risk ID (linked to the Risk Register — Deliverable 02)
+  - Related Risk ID (linked to the Risk Register — Deliverable 01)
   - Expected Evidence / Reference (policy, procedure or configuration that
     would support the control)
   - Remediation action with target date (for controls not yet fully
