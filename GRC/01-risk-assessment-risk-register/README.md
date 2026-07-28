@@ -127,4 +127,4 @@ treatment decision → risk owner → action owner**
 
 ## Next step in the portfolio
 
-➡️ Deliverable 03 — Control Mapping Matrix (ISO 27001 ↔ NIS2 ↔ DORA ↔ NIST CSF 2.0)
+➡️ Deliverable 02 — Statement of applicability
