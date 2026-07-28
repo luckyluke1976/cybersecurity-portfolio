@@ -4,7 +4,7 @@
 
 This document defines the fictional company used across **all
 deliverables in this portfolio**. Every decision in the Statement of
-Applicability (Deliverable 01), the Risk Register (Deliverable 02) and
+Applicability (Deliverable 02), the Risk Register (Deliverable 01) and
 the following deliverables is derived from the context described here.
 
 In a real ISMS, this document would support the activities required by
@@ -120,8 +120,8 @@ and why some risks in the register keep a High residual score.
 
 | Deliverable | What it takes from this context |
 |---|---|
-| 01 — Statement of Applicability | Applicability decisions, implementation status, control owners |
-| 02 — Risk Assessment & Risk Register | Assets, existing controls, residual scores, risk/action owners |
+| 01 — Risk Assessment & Risk Register | Assets, existing controls, residual scores, risk/action owners |
+| 02 — Statement of Applicability | Applicability decisions, implementation status, control owners |
 | 03 — Control Mapping Matrix | Regulatory exposure (ISO, NIS2, DORA, NIST CSF) |
 | 04 — NIS2 Gap Analysis | Entity classification and current posture |
 | 05 — DORA Compliance Mapping | Financial-entity obligations, ICT third-party landscape |
