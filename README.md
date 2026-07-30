@@ -40,7 +40,27 @@ The deliverables follow the ISO/IEC 27001 implementation sequence: risks are ass
 <sub>PECB awards the Lead Implementer credential only to candidates who also meet the documented ISMS project-experience requirement. Provisional Implementer is the tier that matches my current record; the higher tiers follow from project hours in a professional role.</sub>
 
 ---
-## 🧰 Technical Security Foundation
+## 🧰 Methods & Tooling
+
+### ⚖️ GRC practice
+
+<sub>Methods applied across the VindobonaPay deliverables. Working documents are produced in Markdown and Excel and published as PDF.</sub>
+
+<sub>
+
+| Area | What I applied |
+|---|---|
+| Risk management | Qualitative risk assessment (ISO/IEC 27001 Clause 6.1.2, NIST SP 800-30) — inherent and residual scoring, defined acceptance criteria, dual risk ownership |
+| Control selection | Statement of Applicability across all 93 Annex A controls, with documented justification for inclusion and exclusion |
+| Cross-framework analysis | Control mapping across ISO/IEC 27001, NIS2, DORA and NIST CSF 2.0; identification of the DORA *lex specialis* carve-out for financial entities |
+| Compliance assessment | Applicability determination and gap analysis with prioritised remediation actions |
+| Control testing | Test design, sampling, exception logging, definition of expected evidence |
+| Evidence automation | Python script reading access-control exports and producing structured test output |
+| Regulatory sources | EUR-Lex · ENISA · ESA technical standards (EBA / ESMA / EIOPA) · NIST · national supervisory and CERT guidance |
+
+</sub>
+
+### 🔧 Technical foundation
 
 <sub>Hands-on labs from my cybersecurity training, run in an isolated lab environment against intentionally vulnerable targets. A GRC analyst who understands how an exploit works writes better controls and asks a SOC for the right evidence.</sub>
 
