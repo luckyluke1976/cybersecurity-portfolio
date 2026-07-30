@@ -1,6 +1,6 @@
 # 🛡️ Cybersecurity Portfolio — Luca Danisi
 > Bridging law, finance and cybersecurity — specializing in Governance, Risk & Compliance.  
-> Hands-on technical labs backed by a GRC focus on ISO/IEC 27001, NIS2 and DORA.
+> GRC deliverables on ISO/IEC 27001, NIS2 and DORA, backed by hands-on technical labs.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luca-danisi-5a80a227)
 [![Credly](https://img.shields.io/badge/Credly-FF6B00?style=flat&logo=credly&logoColor=white)](https://www.credly.com/users/luca-danisi)
@@ -26,6 +26,8 @@ The deliverables follow the ISO/IEC 27001 implementation sequence: risks are ass
 | 05 | DORA Compliance Mapping | DORA (EU 2022/2554) | [📄 README](GRC/05-dora-compliance-mapping/README.md) | [📕 PDF](GRC/05-dora-compliance-mapping/VindobonaPay_DORA_Mapping.pdf) |
 | 06 | Control Testing & Evidence Automation | ISO 27001 / audit practice | [📄 README](GRC/06-control-testing-evidence/README.md) | [📕 PDF](GRC/06-control-testing-evidence/VindobonaPay_Control_Testing.pdf) |
 
+**Scope and limits.** VindobonaPay is a teaching scenario, not client work. The documents show how the frameworks are applied to a realistic fact pattern; evidence references describe the type of evidence a real implementation would produce, not documents that physically exist.
+
 <sub>AI tools were used for drafting, formatting and repetitive tasks. All assumptions, risk decisions and compliance mappings were reviewed and remain the author's responsibility.</sub>
 
 ---
@@ -33,12 +35,14 @@ The deliverables follow the ISO/IEC 27001 implementation sequence: risks are ass
 | Certification | Status | Year |
 |---|---|---|
 | CompTIA Security+ | ✅ Achieved | 2026 |
-| ISO/IEC 27001 Lead Implementer (PECB) | ✅ Achieved | 2026 |
+| ISO/IEC 27001:2022 Provisional Implementer (PECB) | ✅ Achieved | 2026 |
+
+<sub>PECB awards the Lead Implementer credential only to candidates who also meet the documented ISMS project-experience requirement. Provisional Implementer is the tier that matches my current record; the higher tiers follow from project hours in a professional role.</sub>
 
 ---
 ## 🧰 Technical Security Foundation
 
-<sub>Hands-on labs from my cybersecurity training. A GRC analyst who understands how an exploit works writes better controls.</sub>
+<sub>Hands-on labs from my cybersecurity training, run in an isolated lab environment against intentionally vulnerable targets. A GRC analyst who understands how an exploit works writes better controls and asks a SOC for the right evidence.</sub>
 
 <sub>
 
@@ -49,7 +53,7 @@ The deliverables follow the ISO/IEC 27001 implementation sequence: risks are ass
 | Wireshark | Network Analysis | Packet capture and traffic analysis |
 | Splunk | SIEM | Log analysis, alert monitoring |
 | Metasploit | Exploitation | Vulnerability exploitation framework |
-| Meterpreter | Post-Exploitation | Remote shell, screenshot, keylogger, webcam |
+| Meterpreter | Post-Exploitation | Remote shell and post-exploitation tooling |
 | msfvenom | Payload Generation | Custom reverse shell payloads |
 | Hydra | Password Attacks | Brute force SSH, FTP, web logins |
 | BurpSuite | Web Security | HTTP interception, web app testing |
@@ -84,40 +88,11 @@ The deliverables follow the ISO/IEC 27001 implementation sequence: risks are ass
 </sub>
 
 ---
-## ⚔️ HTB Machines
+## ⚔️ Hack The Box
 
-### <sub>🔴 Main Machines (8/8)</sub>
+<sub>15 machines completed — 8 main machines (Linux and Windows, Easy to Medium) and 7 Starting Point. Techniques span SMB and RCE exploitation, privilege escalation, web enumeration, SQL injection and service misconfiguration.</sub>
 
-<sub>
-
-| # | Machine | OS | Difficulty | Technique |
-|---|---|---|---|---|
-| 01 | [Lame](HTB/Lame/README.md) | Linux | Easy | SMB exploitation, CVE-2007-2447 |
-| 02 | [Blue](HTB/Blue/README.md) | Windows | Easy | MS17-010 EternalBlue |
-| 03 | [Legacy](HTB/Legacy/README.md) | Windows | Easy | MS08-067 NetAPI |
-| 04 | [Jerry](HTB/Jerry/README.md) | Windows | Easy | Tomcat default credentials, WAR upload |
-| 05 | [Nibbles](HTB/Nibbles/README.md) | Linux | Easy | Web enumeration, Nibbleblog RCE, sudo misconfiguration |
-| 06 | [Bounty](HTB/Bounty/README.md) | Windows | Medium | IIS web.config upload, SeImpersonatePrivilege |
-| 07 | [Optimum](HTB/Optimum/README.md) | Windows | Easy | HttpFileServer RCE, MS16-032 |
-| 08 | [Bastard](HTB/Bastard/README.md) | Windows | Medium | Drupal 7 Services RCE, MS15-051 |
-
-</sub>
-
-### <sub>🟢 Starting Point</sub>
-
-<sub>
-
-| # | Machine | OS | Difficulty | Technique |
-|---|---|---|---|---|
-| 01 | [Meow](HTB/Meow/README.md) | Linux | Very Easy | Telnet, anonymous login |
-| 02 | [Redeemer](HTB/Redeemer/README.md) | Linux | Very Easy | Redis enumeration |
-| 03 | [Appointment](HTB/Appointment/README.md) | Linux | Very Easy | SQL Injection |
-| 04 | [Responder](HTB/Responder/README.md) | Windows | Very Easy | LFI, NTLMv2, WinRM |
-| 05 | [Crocodile](HTB/Crocodile/README.md) | Linux | Very Easy | FTP anonymous, directory brute force |
-| 06 | [Sequel](HTB/Sequel/README.md) | Linux | Very Easy | MySQL unauthenticated access |
-| 07 | [Three](HTB/Three/README.md) | Linux | Very Easy | S3 bucket misconfiguration, PHP RCE |
-
-</sub>
+<sub>Full write-ups: **[HTB machine index →](HTB/README.md)**  ·  [HTB profile](https://app.hackthebox.com/public/users/3050365)</sub>
 
 ---
 ## 🔬 Projects
