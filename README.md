@@ -44,21 +44,17 @@ The deliverables follow the ISO/IEC 27001 implementation sequence: risks are ass
 
 ### ⚖️ GRC practice
 
-<sub>Methods applied across the VindobonaPay deliverables. Working documents are produced in Markdown and Excel and published as PDF.</sub>
-
-<sub>
+Methods applied across the VindobonaPay deliverables. Working documents are produced in Markdown and Excel and published as PDF.
 
 | Area | What I applied |
 |---|---|
-| Risk management | Qualitative risk assessment (ISO/IEC 27001 Clause 6.1.2, NIST SP 800-30) — inherent and residual scoring, defined acceptance criteria, dual risk ownership |
-| Control selection | Statement of Applicability across all 93 Annex A controls, with documented justification for inclusion and exclusion |
-| Cross-framework analysis | Control mapping across ISO/IEC 27001, NIS2, DORA and NIST CSF 2.0; identification of the DORA *lex specialis* carve-out for financial entities |
+| Risk management | Qualitative risk assessment (Clause 6.1.2, NIST SP 800-30) — inherent and residual scoring, acceptance criteria, dual risk ownership |
+| Control selection | Statement of Applicability across all 93 Annex A controls, with justification for inclusion and exclusion |
+| Cross-framework analysis | Control mapping across ISO/IEC 27001, NIS2, DORA and NIST CSF 2.0, including the DORA *lex specialis* carve-out |
 | Compliance assessment | Applicability determination and gap analysis with prioritised remediation actions |
 | Control testing | Test design, sampling, exception logging, definition of expected evidence |
 | Evidence automation | Python script reading access-control exports and producing structured test output |
 | Regulatory sources | EUR-Lex · ENISA · ESA technical standards (EBA / ESMA / EIOPA) · NIST · national supervisory and CERT guidance |
-
-</sub>
 
 ### 🔧 Technical foundation
 
