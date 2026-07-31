@@ -20,7 +20,7 @@ The deliverables follow the ISO/IEC 27001 implementation sequence: risks are ass
 |---|---|---|---|---|
 | 00 | Organization Context (scenario) | ISO/IEC 27001 — Cl. 4.1, 4.2, 4.3 | [📄 README](GRC/00-organization-context/README.md) | — |
 | 01 | Risk Assessment & Risk Register | ISO/IEC 27001 — Cl. 6.1.2, 8.2 · NIST SP 800-30 | [📄 README](GRC/01-risk-assessment-risk-register/README.md) | [📕 PDF](GRC/01-risk-assessment-risk-register/VindobonaPay_Risk_Register.pdf) |
-| 02 | Statement of Applicability (SoA) — 93/93 controls justified | ISO/IEC 27001 — Cl. 6.1.3 d) · Annex A | [📄 README](GRC/02-statement-of-applicability/README.md) | [📕 PDF](GRC/02-statement-of-applicability/VindobonaPay_SoA.pdf) |
+| 02 | Statement of Applicability (SoA) — 93/93 controls justified | ISO/IEC 27001 — Cl. 6.1.3 d · Annex A | [📄 README](GRC/02-statement-of-applicability/README.md) | [📕 PDF](GRC/02-statement-of-applicability/VindobonaPay_SoA.pdf) |
 | 03 | Control Mapping Matrix (ISO ↔ NIS2 ↔ DORA ↔ NIST CSF 2.0) | ISO/IEC 27001 — Cl. 4.2, A.5.31 · NIS2 · DORA · NIST CSF 2.0 | [📄 README](GRC/03-control-mapping/README.md) | [📕 PDF](GRC/03-control-mapping/VindobonaPay_Control_Mapping.pdf) |
 | 04 | NIS2 Applicability & Gap Analysis | NIS2 (EU 2022/2555) — Art. 21, Art. 23 · ISO Cl. 4.2 | [📄 README](GRC/04-nis2-gap-analysis/README.md) | [📕 PDF](GRC/04-nis2-gap-analysis/VindobonaPay_NIS2_Gap_Analysis.pdf) |
 | 05 | DORA Compliance Mapping | DORA (EU 2022/2554) — Ch. II (ICT risk), Ch. III (incidents), Ch. V (third-party) | [📄 README](GRC/05-dora-compliance-mapping/README.md) | [📕 PDF](GRC/05-dora-compliance-mapping/VindobonaPay_DORA_Mapping.pdf) |
