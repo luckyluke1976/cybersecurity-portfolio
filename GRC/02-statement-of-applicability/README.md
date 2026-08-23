@@ -45,7 +45,7 @@ ISMS implementation sequence. In ISO/IEC 27001 the SoA is an output of the
 risk treatment process (Clause 6.1.3): risks are assessed, treatment
 options are selected, necessary controls are determined and then compared
 against Annex A. This SoA was finalized and updated using the risk
-assessment documented in Deliverable 02.
+assessment documented in Deliverable 01.
 
 ## What's inside
 
@@ -97,7 +97,7 @@ tracker.
 
 - **The Risk ID column links the SoA to the Risk Register (v2.0).**
   Where applicable, the Risk ID column links controls to the risks they
-  treat (R-01 to R-16, see Deliverable 02). Controls without a direct Risk
+  treat (R-01 to R-16, see Deliverable 01). Controls without a direct Risk
   ID support the ISMS as baseline, legal, regulatory, contractual or
   business-required controls. This update reflects how an SoA evolves in
   practice: it is a living document, not a one-time deliverable.
