@@ -9,7 +9,7 @@ portfolio.
 The risk assessment identifies the organization's main information
 security risks, scores them before and after existing controls, and
 defines how each risk is treated. The result feeds directly into the
-Statement of Applicability (Deliverable 01): each risk is linked to the
+Statement of Applicability (Deliverable 02): each risk is linked to the
 Annex A controls that treat it.
 
 > ⚠️ **Assumptions and limitations**
@@ -34,7 +34,7 @@ Annex A controls that treat it.
 - **Both inherent and residual risk are evaluated.** Inherent scores
   represent exposure before considering controls. Residual scores
   reflect the current environment, including controls that are only
-  partially implemented (see Deliverable 01).
+  partially implemented (see Deliverable 02).
 - Each risk receives a **treatment decision**: Modify/Mitigate,
   Retain/Accept, Share/Transfer or Avoid. The decision is supported by a
   treatment action, a risk owner, an action owner, a target date and a
