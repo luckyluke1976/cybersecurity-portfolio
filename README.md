@@ -1,6 +1,6 @@
 # 🛡️ Cybersecurity Portfolio — Luca Danisi
 > Bridging law, finance and cybersecurity — specializing in Governance, Risk & Compliance.  
-> GRC deliverables on ISO/IEC 27001, NIS2 and DORA, backed by hands-on technical labs.
+> ISO/IEC 27001, DORA and NIS2 applied to a regulated EU financial entity, backed by hands-on technical labs.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luca-danisi-5a80a227)
 [![Credly](https://img.shields.io/badge/Credly-FF6B00?style=flat&logo=credly&logoColor=white)](https://www.credly.com/users/luca-danisi)
@@ -16,15 +16,17 @@ All deliverables use the same fictional case study — **VindobonaPay GmbH**, a 
 
 The deliverables follow the ISO/IEC 27001 implementation sequence: risks are assessed first, and the Statement of Applicability documents the controls selected to treat them.
 
-| # | Deliverable | Framework & primary reference | README | PDF |
+**New here?** Start with **[01 — Risk Assessment](GRC/01-risk-assessment-risk-register/README.md)** for method, **[05 — DORA Compliance Mapping](GRC/05-dora-compliance-mapping/README.md)** for regulatory reasoning, and **[06 — Control Testing](GRC/06-control-testing-evidence/README.md)** for execution. The rest fills in the context.
+
+| # | Deliverable | Framework | README | PDF |
 |---|---|---|---|---|
-| 00 | Organization Context (scenario) | ISO/IEC 27001 — Cl. 4.1, 4.2, 4.3 | [📄 README](GRC/00-organization-context/README.md) | — |
-| 01 | Risk Assessment & Risk Register | ISO/IEC 27001 — Cl. 6.1.2, 8.2 · NIST SP 800-30 | [📄 README](GRC/01-risk-assessment-risk-register/README.md) | [📕 PDF](GRC/01-risk-assessment-risk-register/VindobonaPay_Risk_Register.pdf) |
-| 02 | Statement of Applicability (SoA) — 93/93 controls justified | ISO/IEC 27001 — Cl. 6.1.3 d · Annex A | [📄 README](GRC/02-statement-of-applicability/README.md) | [📕 PDF](GRC/02-statement-of-applicability/VindobonaPay_SoA.pdf) |
-| 03 | Control Mapping Matrix (ISO ↔ NIS2 ↔ DORA ↔ NIST CSF 2.0) | ISO/IEC 27001 — Cl. 4.2, A.5.31 · NIS2 · DORA · NIST CSF 2.0 | [📄 README](GRC/03-control-mapping/README.md) | [📕 PDF](GRC/03-control-mapping/VindobonaPay_Control_Mapping.pdf) |
-| 04 | NIS2 Applicability & Gap Analysis | NIS2 (EU 2022/2555) — Art. 21, Art. 23 · ISO Cl. 4.2 | [📄 README](GRC/04-nis2-gap-analysis/README.md) | [📕 PDF](GRC/04-nis2-gap-analysis/VindobonaPay_NIS2_Gap_Analysis.pdf) |
-| 05 | DORA Compliance Mapping | DORA (EU 2022/2554) — Ch. II (ICT risk), Ch. III (incidents), Ch. V (third-party) | [📄 README](GRC/05-dora-compliance-mapping/README.md) | [📕 PDF](GRC/05-dora-compliance-mapping/VindobonaPay_DORA_Mapping.pdf) |
-| 06 | Control Testing & Evidence Automation | ISO/IEC 27001 — Cl. 9.1, 9.2 · Cl. 7.5 (documented information) | [📄 README](GRC/06-control-testing-evidence/README.md) | [📕 PDF](GRC/06-control-testing-evidence/VindobonaPay_Control_Testing.pdf) |
+| 00 | Organization Context (scenario) | Supports ISO/IEC 27001 Clause 4 | [📄 README](GRC/00-organization-context/README.md) | — |
+| 01 | Risk Assessment & Risk Register | ISO/IEC 27001 / NIST SP 800-30 | [📄 README](GRC/01-risk-assessment-risk-register/README.md) | [📕 PDF](GRC/01-risk-assessment-risk-register/VindobonaPay_Risk_Register.pdf) |
+| 02 | Statement of Applicability (SoA) | ISO/IEC 27001 | [📄 README](GRC/02-statement-of-applicability/README.md) | [📕 PDF](GRC/02-statement-of-applicability/VindobonaPay_SoA.pdf) |
+| 03 | Control Mapping Matrix (ISO ↔ NIS2 ↔ DORA ↔ NIST CSF 2.0) | Multi-framework | [📄 README](GRC/03-control-mapping/README.md) | [📕 PDF](GRC/03-control-mapping/VindobonaPay_Control_Mapping.pdf) |
+| 04 | NIS2 Applicability & Gap Analysis | NIS2 (EU 2022/2555) | [📄 README](GRC/04-nis2-gap-analysis/README.md) | [📕 PDF](GRC/04-nis2-gap-analysis/VindobonaPay_NIS2_Gap_Analysis.pdf) |
+| 05 | DORA Compliance Mapping | DORA (EU 2022/2554) | [📄 README](GRC/05-dora-compliance-mapping/README.md) | [📕 PDF](GRC/05-dora-compliance-mapping/VindobonaPay_DORA_Mapping.pdf) |
+| 06 | Control Testing & Evidence Automation | ISO 27001 / audit practice | [📄 README](GRC/06-control-testing-evidence/README.md) | [📕 PDF](GRC/06-control-testing-evidence/VindobonaPay_Control_Testing.pdf) |
 
 **Scope and limits.** VindobonaPay is a teaching scenario, not client work. The documents show how the frameworks are applied to a realistic fact pattern; evidence references describe the type of evidence a real implementation would produce, not documents that physically exist.
 
@@ -58,7 +60,7 @@ Methods applied across the VindobonaPay deliverables. Working documents are prod
 
 ### 🔧 Technical foundation
 
-<sub>Hands-on labs from my cybersecurity training, run in an isolated lab environment against intentionally vulnerable targets. A GRC analyst who understands how an exploit works writes better controls and asks a SOC for the right evidence.</sub>
+A GRC analyst who understands how an exploit works writes better controls and asks a SOC for the right evidence. The labs below come from my cybersecurity training and were run in an isolated environment against intentionally vulnerable targets — they support the governance work, they are not the focus of it.
 
 <sub>
 
@@ -96,6 +98,26 @@ Methods applied across the VindobonaPay deliverables. Working documents are prod
 | 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Hydra | [📄 PDF](SOC/04-AuthCracking/Authentication%20Cracking%20(hydra).pdf) |
 | 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | Ettercap, Wireshark | [📄 PDF](SOC/ARP-Poisoning-Ettercap/Null%20session%20e%20Arp%20Poisoning.pdf) |
 | 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Metasploit, Netcat | [📄 PDF](SOC/Hacking%20with%20Metasploit/Hacking%20con%20Metasploit.pdf) |
+| 07 | [Black Box Penetration Test](SOC/Black%20Box/README.md) | Nmap, Metasploit | [📄 PDF](SOC/Black%20Box/Black%20Box.pdf) |
+| 08 | [MS17-010 Post-Exploitation & MySQL Misconfiguration](SOC/07-MS17010-Meterpreter/README.md) | Metasploit, Meterpreter, MySQL | [📄 PDF](SOC/07-MS17010-Meterpreter/Ms17-010%2BMeterpreter.pdf) |
+| 09 | [Buffer Overflow in C](SOC/Buffer%20Overflow/README.md) | GCC, C Language | [📄 PDF](SOC/Buffer%20Overflow/Buffer%20Overflow.pdf) |
+| 10 | [Incident Response & Malware Analysis](SOC/Incident-Response/README.md) | ANY.RUN, MITRE ATT&CK |[📄 PDF](SOC/Incident-Response/Incident%20Response%20%26%20Malware%20Analysis.pdf) |
+
+</sub>
+
+---
+## ⚔️ Hack The Box
+
+<sub>15 machines completed — 8 main machines (Linux and Windows, Easy to Medium) and 7 Starting Point. Techniques span SMB and RCE exploitation, privilege escalation, web enumeration, SQL injection and service misconfiguration.</sub>
+
+<sub>Full write-ups: **[HTB machine index →](HTB/README.md)**  ·  [HTB profile](https://app.hackthebox.com/public/users/3050365)</sub>
+
+---
+## 🔬 Projects
+
+| Project | Description | README |
+|---|---|---|
+| [CyberLens](Projects/Cyberlens/README.md) | AI-powered security assistant for Even Realities G2 smart glasses. Real-time concept recognition, audio transcription and contextual definitions during study and labs. | [📖 README](Projects/Cyberlens/README.md) |
 | 07 | [Black Box Penetration Test](SOC/Black%20Box/README.md) | Nmap, Metasploit | [📄 PDF](SOC/Black%20Box/Black%20Box.pdf) |
 | 08 | [MS17-010 Post-Exploitation & MySQL Misconfiguration](SOC/07-MS17010-Meterpreter/README.md) | Metasploit, Meterpreter, MySQL | [📄 PDF](SOC/07-MS17010-Meterpreter/Ms17-010%2BMeterpreter.pdf) |
 | 09 | [Buffer Overflow in C](SOC/Buffer%20Overflow/README.md) | GCC, C Language | [📄 PDF](SOC/Buffer%20Overflow/Buffer%20Overflow.pdf) |
