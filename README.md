@@ -1,6 +1,6 @@
 # 🛡️ Cybersecurity Portfolio — Luca Danisi
 > Bridging law, finance and cybersecurity — specializing in Governance, Risk & Compliance.  
-> ISO/IEC 27001, DORA and NIS2 applied to a regulated EU financial entity, backed by hands-on technical labs.
+> ISO/IEC 27001, DORA and NIS2 applied to a fictional regulated EU financial entity, backed by hands-on technical labs.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luca-danisi-5a80a227)
 [![Credly](https://img.shields.io/badge/Credly-FF6B00?style=flat&logo=credly&logoColor=white)](https://www.credly.com/users/luca-danisi)
@@ -98,26 +98,6 @@ A GRC analyst who understands how an exploit works writes better controls and as
 | 04 | [Authentication Cracking](SOC/04-AuthCracking/README.md) | Hydra | [📄 PDF](SOC/04-AuthCracking/Authentication%20Cracking%20(hydra).pdf) |
 | 05 | [ARP Poisoning & MITM Attack](SOC/ARP-Poisoning-Ettercap/README.md) | Ettercap, Wireshark | [📄 PDF](SOC/ARP-Poisoning-Ettercap/Null%20session%20e%20Arp%20Poisoning.pdf) |
 | 06 | [Hacking with Metasploit – vsftpd 2.3.4](SOC/Hacking%20with%20Metasploit/README.md) | Metasploit, Netcat | [📄 PDF](SOC/Hacking%20with%20Metasploit/Hacking%20con%20Metasploit.pdf) |
-| 07 | [Black Box Penetration Test](SOC/Black%20Box/README.md) | Nmap, Metasploit | [📄 PDF](SOC/Black%20Box/Black%20Box.pdf) |
-| 08 | [MS17-010 Post-Exploitation & MySQL Misconfiguration](SOC/07-MS17010-Meterpreter/README.md) | Metasploit, Meterpreter, MySQL | [📄 PDF](SOC/07-MS17010-Meterpreter/Ms17-010%2BMeterpreter.pdf) |
-| 09 | [Buffer Overflow in C](SOC/Buffer%20Overflow/README.md) | GCC, C Language | [📄 PDF](SOC/Buffer%20Overflow/Buffer%20Overflow.pdf) |
-| 10 | [Incident Response & Malware Analysis](SOC/Incident-Response/README.md) | ANY.RUN, MITRE ATT&CK |[📄 PDF](SOC/Incident-Response/Incident%20Response%20%26%20Malware%20Analysis.pdf) |
-
-</sub>
-
----
-## ⚔️ Hack The Box
-
-<sub>15 machines completed — 8 main machines (Linux and Windows, Easy to Medium) and 7 Starting Point. Techniques span SMB and RCE exploitation, privilege escalation, web enumeration, SQL injection and service misconfiguration.</sub>
-
-<sub>Full write-ups: **[HTB machine index →](HTB/README.md)**  ·  [HTB profile](https://app.hackthebox.com/public/users/3050365)</sub>
-
----
-## 🔬 Projects
-
-| Project | Description | README |
-|---|---|---|
-| [CyberLens](Projects/Cyberlens/README.md) | AI-powered security assistant for Even Realities G2 smart glasses. Real-time concept recognition, audio transcription and contextual definitions during study and labs. | [📖 README](Projects/Cyberlens/README.md) |
 | 07 | [Black Box Penetration Test](SOC/Black%20Box/README.md) | Nmap, Metasploit | [📄 PDF](SOC/Black%20Box/Black%20Box.pdf) |
 | 08 | [MS17-010 Post-Exploitation & MySQL Misconfiguration](SOC/07-MS17010-Meterpreter/README.md) | Metasploit, Meterpreter, MySQL | [📄 PDF](SOC/07-MS17010-Meterpreter/Ms17-010%2BMeterpreter.pdf) |
 | 09 | [Buffer Overflow in C](SOC/Buffer%20Overflow/README.md) | GCC, C Language | [📄 PDF](SOC/Buffer%20Overflow/Buffer%20Overflow.pdf) |
